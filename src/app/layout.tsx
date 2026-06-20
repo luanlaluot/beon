@@ -11,9 +11,52 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 
-export const metadata = {
-  title: "Beon || Giải Pháp Toàn Diện Cho Doanh Nghiệp",
-  description: "Trang đích hiện đại và ấn tượng của Beon, chuyên cung cấp các giải pháp tăng trưởng mạnh mẽ.",
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  metadataBase: new URL("https://beon.vn"),
+  title: {
+    default: "Beon | Giải Pháp Đào Tạo & E-Learning Toàn Diện",
+    template: "%s | Beon",
+  },
+  description: "Trang đích hiện đại và ấn tượng của Beon, chuyên cung cấp các giải pháp tăng trưởng mạnh mẽ, chuyển đổi số E-learning và đào tạo doanh nghiệp SME Việt Nam.",
+  keywords: ["E-learning", "Đào tạo doanh nghiệp", "Chuyển đổi số", "Beon Academy", "SME Việt Nam"],
+  alternates: {
+    canonical: "/",
+  },
+  openGraph: {
+    title: "Beon | Giải Pháp Đào Tạo & E-Learning Toàn Diện",
+    description: "Giải pháp học tập & đào tạo thông minh cho doanh nghiệp SME Việt Nam. Powering Elearning Transformation.",
+    url: "https://beon.vn",
+    siteName: "Beon",
+    images: [
+      {
+        url: "/assets/img/bg/main2.jpg", // Default OG image
+        width: 1200,
+        height: 630,
+        alt: "Beon Team Workspace",
+      },
+    ],
+    locale: "vi_VN",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Beon | Giải Pháp Đào Tạo & E-Learning Toàn Diện",
+    description: "Giải pháp học tập & đào tạo thông minh cho doanh nghiệp SME Việt Nam. Powering Elearning Transformation.",
+    images: ["/assets/img/bg/main2.jpg"],
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
+  },
 };
 
 type RootLayoutProps = {
