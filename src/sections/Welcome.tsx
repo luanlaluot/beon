@@ -12,36 +12,45 @@ export default function Welcome() {
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-          
           {/* Left Content */}
           <div className="flex flex-col justify-center">
-            <div data-aos="fade-up" data-aos-duration="600" className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 text-primary font-semibold text-sm mb-6 w-max border border-primary/20">
+            <div
+              data-aos="fade-up"
+              data-aos-duration="600"
+              className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 text-primary font-semibold text-sm mb-6 w-max border border-primary/20"
+            >
               <span className="w-2 h-2 rounded-full bg-accent animate-pulse"></span>
               Beon Academy
             </div>
-            
-            <h1 
-              data-aos="fade-up" 
+
+            <h1
+              data-aos="fade-up"
               data-aos-duration="800"
               className="text-4xl lg:text-6xl font-display font-bold text-foreground leading-[1.1] mb-6 tracking-tight"
             >
-              POWERING<br/>
-              <span className="text-primary">ELEARNING</span><br/>TRANSFORMATION</h1>
-            
-            <p 
-              data-aos="fade-up" 
+              POWERING
+              <br />
+              <span className="text-primary">ELEARNING</span>
+              <br />
+              TRANSFORMATION
+            </h1>
+
+            <p
+              data-aos="fade-up"
               data-aos-duration="1000"
               className="text-base md:text-lg text-foreground/80 max-w-lg leading-relaxed"
             >
               BEON – Powering Learning Transformation
             </p>
 
-            <p 
-              data-aos="fade-up" 
+            <p
+              data-aos="fade-up"
               data-aos-duration="1000"
               className="text-base md:text-lg text-foreground/80 mb-10 max-w-lg leading-relaxed"
             >
-Giải pháp học tập & đào tạo thông minh cho doanh nghiệp SME Việt Nam            </p>
+              Giải pháp học tập & đào tạo thông minh cho doanh nghiệp SME Việt
+              Nam{" "}
+            </p>
 
             <div
               data-aos="fade-up"
@@ -53,8 +62,17 @@ Giải pháp học tập & đào tạo thông minh cho doanh nghiệp SME Việt
                 className="inline-flex items-center justify-center gap-2 px-6 py-3 bg-primary text-base text-white font-semibold rounded-xl hover:bg-primary/90 transition-all duration-300 shadow-lg shadow-primary/30 hover:shadow-primary/50 hover:-translate-y-1"
               >
                 Tư vấn miễn phí
-                <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-                  <path fillRule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clipRule="evenodd" />
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="h-5 w-5"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                >
+                  <path
+                    fillRule="evenodd"
+                    d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                    clipRule="evenodd"
+                  />
                 </svg>
               </a>
               <a
@@ -67,16 +85,20 @@ Giải pháp học tập & đào tạo thông minh cho doanh nghiệp SME Việt
           </div>
 
           {/* Right Image */}
-          <div className="relative hidden lg:block" data-aos="zoom-in" data-aos-duration="1000">
+          <div
+            className="relative hidden lg:block"
+            data-aos="zoom-in"
+            data-aos-duration="1000"
+          >
             <div className="relative rounded-2xl overflow-hidden shadow-2xl border-4 border-white transform rotate-2 hover:rotate-0 transition-transform duration-500">
               <img
-                className="w-full h-auto object-cover aspect-[4/3]"
+                className="w-full h-auto object-cover aspect-[4/5]"
                 src="/assets/img/bg/main2.jpg"
                 alt="Beon Team Workspace"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent"></div>
             </div>
-            
+
             {/* Floating Element */}
             {/* <div className="absolute -bottom-10 -left-10 bg-white p-6 rounded-xl shadow-xl border border-border flex items-center gap-4 animate-bounce" style={{ animationDuration: '3s' }}>
               <div className="w-12 h-12 bg-accent/20 rounded-full flex items-center justify-center text-accent">
@@ -90,7 +112,6 @@ Giải pháp học tập & đào tạo thông minh cho doanh nghiệp SME Việt
               </div>
             </div> */}
           </div>
-
         </div>
       </div>
     </section>

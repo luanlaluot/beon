@@ -2,11 +2,11 @@
 
 import { type ReactNode, useEffect, useState } from "react";
 import BackToTop from "../elements/BackToTop";
-import Breadcrumb from "./Breadcrumb";
 import MobileMenu from "./MobileMenu";
 import PageHead from "./PageHead";
 import Footer1 from "./footer/Footer1";
 import Header1 from "./header/Header1";
+import Breadcrumb from "./Breadcrumb";
 
 type LayoutProps = {
   headerStyle?: number;
@@ -49,10 +49,6 @@ export default function Layout({
         handleMobileMenu={handleMobileMenu}
       />
 
-      <MobileMenu
-        isMobileMenu={isMobileMenu}
-        handleMobileMenu={handleMobileMenu}
-      />
       {breadcrumbTitle && <Breadcrumb breadcrumbTitle={breadcrumbTitle} />}
       {children}
       <Footer1 />

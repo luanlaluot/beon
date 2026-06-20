@@ -6,8 +6,8 @@ const steps = [
     icon: "fa-solid fa-magnifying-glass-chart",
     items: [
       "Làm việc với doanh nghiệp để xác định mục tiêu học tập, nhóm đối tượng, nội dung cần số hoá.",
-      "Phân tích quy trình làm việc, tài liệu hiện có và hành vi học tập nội bộ.",
     ],
+    image: "/assets/img/image/work1-1.png",
   },
   {
     number: "02",
@@ -16,28 +16,24 @@ const steps = [
     icon: "fa-solid fa-pen-ruler",
     items: [
       "Xây dựng khung nội dung, mục tiêu học tập, phân chia module và thời lượng.",
-      "Viết kịch bản e-learning chi tiết, Storyboard và lộ trình học.",
     ],
+    image: "/assets/img/image/work1-2.png",
   },
   {
     number: "03",
     title: "Triển khai đào tạo",
     subtitle: "Training Delivery",
     icon: "fa-solid fa-play-circle",
-    items: [
-      "Thiết kế hình ảnh, video, giọng đọc, tương tác và gamification.",
-      "Đảm bảo chuẩn SCORM / HTML5 tương thích với hệ thống LMS.",
-    ],
+    items: ["Thiết kế hình ảnh, video, giọng đọc, tương tác và gamification."],
+    image: "/assets/img/image/work1-3.png",
   },
   {
     number: "04",
     title: "Sản xuất bài giảng điện tử",
     subtitle: "E-learning Production",
     icon: "fa-solid fa-film",
-    items: [
-      "Cấu hình và cài đặt hệ thống LMS theo yêu cầu doanh nghiệp.",
-      "Đăng tải khóa học, phân quyền người học, hướng dẫn sử dụng.",
-    ],
+    items: ["Cấu hình và cài đặt hệ thống LMS theo yêu cầu doanh nghiệp."],
+    image: "/assets/img/image/work1-4.png",
   },
   {
     number: "05",
@@ -46,8 +42,8 @@ const steps = [
     icon: "fa-solid fa-rocket",
     items: [
       "Thu thập dữ liệu học tập, báo cáo tiến độ, phân tích hành vi người học.",
-      "Đề xuất cải tiến nội dung và trải nghiệm học tập định kỳ.",
     ],
+    image: "/assets/img/image/work1-5.png",
   },
 ];
 
@@ -61,7 +57,6 @@ export default function ProcessElearning() {
       <div className="absolute top-0 left-0 w-1/3 h-full bg-white/5 skew-x-12 transform origin-top -translate-x-20 z-0" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-
         {/* Header */}
         <div className="text-center mb-16">
           <div className="inline-flex items-center px-5 py-2 rounded-full bg-white/10 text-white font-bold text-sm border border-white/20 backdrop-blur-sm mb-4">
@@ -71,7 +66,8 @@ export default function ProcessElearning() {
             E-Learning <span className="text-blue-300">Solution</span>
           </h2>
           <p className="text-base text-white/70 max-w-2xl mx-auto leading-relaxed">
-            Quy trình số hoá đào tạo và triển khai E-learning chuyên nghiệp 5 bước, từ khảo sát đến vận hành.
+            Quy trình số hoá đào tạo và triển khai E-learning chuyên nghiệp 5
+            bước, từ khảo sát đến vận hành.
           </p>
         </div>
 
@@ -88,22 +84,29 @@ export default function ProcessElearning() {
               >
                 <div className="relative mb-10 w-full max-w-[320px]">
                   <div className="w-full h-48 rounded-[2rem] overflow-hidden border border-white/10 bg-white/5 backdrop-blur-sm group-hover:bg-white/10 group-hover:border-white/20 transition-all duration-500 shadow-sm group-hover:shadow-lg flex flex-col items-center justify-center">
-                    <div className="w-20 h-20 rounded-full flex items-center justify-center bg-white/10 shadow-sm mb-2 group-hover:scale-110 group-hover:bg-primary transition-all duration-500 text-white">
-                      <i className={`${step.icon} text-3xl transition-colors duration-500`} />
-                    </div>
+                    <img
+                      src={step.image}
+                      alt={step.title}
+                      className="w-full h-full object-cover group-hover:scale-110 grayscale group-hover:grayscale-0 transition-all duration-500"
+                    />
                   </div>
                   <div className="absolute -bottom-6 left-1/2 -translate-x-1/2 w-14 h-14 rounded-full flex items-center justify-center shadow-lg z-10 bg-primary group-hover:bg-blue-400 transition-colors">
                     <div className="w-12 h-12 rounded-full border-2 border-dashed border-white/60 flex items-center justify-center">
-                      <span className="text-white font-display font-bold text-base leading-none">{step.number}</span>
+                      <span className="text-white font-display font-bold text-base leading-none">
+                        {step.number}
+                      </span>
                     </div>
                   </div>
                 </div>
-                <h3 className="text-xl font-display font-bold text-white mb-1">{step.title}</h3>
-                <p className="text-xs font-bold tracking-widest uppercase mb-4 text-blue-300">{step.subtitle}</p>
+                <h3 className="text-xl font-display font-bold text-white mb-1">
+                  {step.title}
+                </h3>
+                <p className="text-xs font-bold tracking-widest uppercase mb-4 text-blue-300">
+                  {step.subtitle}
+                </p>
                 <ul className="text-left space-y-2 text-sm text-white/70 w-full max-w-xs mx-auto">
                   {step.items.map((item, j) => (
                     <li key={j} className="flex gap-2 leading-relaxed">
-                      <span className="shrink-0 mt-1.5 w-1.5 h-1.5 rounded-full bg-blue-300/60" />
                       {item}
                     </li>
                   ))}
@@ -123,22 +126,32 @@ export default function ProcessElearning() {
               >
                 <div className="relative mb-10 w-full max-w-[320px]">
                   <div className="w-full h-48 rounded-[2rem] overflow-hidden border border-white/10 bg-white/5 backdrop-blur-sm group-hover:bg-white/10 group-hover:border-white/20 transition-all duration-500 shadow-sm group-hover:shadow-lg flex flex-col items-center justify-center">
-                    <div className="w-20 h-20 rounded-full flex items-center justify-center bg-white/10 shadow-sm mb-2 group-hover:scale-110 group-hover:bg-primary transition-all duration-500 text-white">
-                      <i className={`${step.icon} text-3xl transition-colors duration-500`} />
-                    </div>
+                    <img
+                      src={step.image}
+                      alt={step.title}
+                      className="w-full h-full object-cover group-hover:scale-110 grayscale group-hover:grayscale-0 transition-all duration-500"
+                    />
                   </div>
                   <div className="absolute -bottom-6 left-1/2 -translate-x-1/2 w-14 h-14 rounded-full flex items-center justify-center shadow-lg z-10 bg-primary group-hover:bg-blue-400 transition-colors">
                     <div className="w-12 h-12 rounded-full border-2 border-dashed border-white/60 flex items-center justify-center">
-                      <span className="text-white font-display font-bold text-base leading-none">{step.number}</span>
+                      <span className="text-white font-display font-bold text-base leading-none">
+                        {step.number}
+                      </span>
                     </div>
                   </div>
                 </div>
-                <h3 className="text-xl font-display font-bold text-white mb-1">{step.title}</h3>
-                <p className="text-xs font-bold tracking-widest uppercase mb-4 text-blue-300">{step.subtitle}</p>
+                <h3 className="text-xl font-display font-bold text-white mb-1">
+                  {step.title}
+                </h3>
+                <p className="text-xs font-bold tracking-widest uppercase mb-4 text-blue-300">
+                  {step.subtitle}
+                </p>
                 <ul className="text-left space-y-2 text-sm text-white/70 w-full max-w-xs mx-auto">
                   {step.items.map((item, j) => (
-                    <li key={j} className="flex gap-2 leading-relaxed">
-                      <span className="shrink-0 mt-1.5 w-1.5 h-1.5 rounded-full bg-blue-300/60" />
+                    <li
+                      key={j}
+                      className="flex gap-2 leading-relaxed text-center"
+                    >
                       {item}
                     </li>
                   ))}
@@ -146,7 +159,7 @@ export default function ProcessElearning() {
               </div>
             ))}
           </div>
-      </div>
+        </div>
       </div>
     </section>
   );
