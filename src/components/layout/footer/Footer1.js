@@ -2,123 +2,114 @@ import Link from "next/link";
 export default function Footer1() {
   return (
     <>
-      <footer className="bg-gray-900 text-gray-100 pt-16 pb-8">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <footer className="bg-foreground text-white/80 pt-20 pb-10 border-t border-white/10 relative overflow-hidden">
+        {/* Decorative background glow */}
+        <div className="absolute top-0 right-1/4 w-96 h-96 bg-primary/10 rounded-full blur-[120px] pointer-events-none"></div>
+
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           {/* Main Footer Content */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
             {/* Brand Section */}
-            <div className="lg:col-span-2 md:col-span-2">
+            <div className="lg:col-span-2">
               <div className="mb-6">
                 <Link href="/" className="inline-block">
                   <img
                     src="/assets/img/logo/logo.png"
                     style={{ height: 60 }}
-                    alt="Consultia Logo"
+                    alt="Beon Logo"
+                    className="brightness-0 invert"
                   />
                 </Link>
               </div>
-              <p className="text-gray-400 text-sm leading-relaxed">
-                Giải pháp học tập & đào tạo thông minh cho doanh nghiệp SME Việt
-                Nam
+              <p className="text-white/60 text-base leading-relaxed max-w-sm">
+                Đồng hành cùng SME Việt Nam trên chặng đường số hóa đào tạo và tối ưu hóa vận hành nội bộ. Giải pháp tinh gọn, hiệu quả đo lường được.
               </p>
             </div>
 
-            {/* Contact Section */}
-            <div className="lg:col-span-2 md:col-span-2 lg:col-span-1">
-              <h3 className="text-white font-semibold mb-4 text-lg">
-                Get in touch
+            {/* Quick Links */}
+            <div>
+              <h3 className="text-white font-display font-semibold mb-6 text-lg tracking-wide">
+                Khám Phá
               </h3>
+              <ul className="space-y-4">
+                <li>
+                  <Link href="#about" className="text-white/60 hover:text-primary transition-colors duration-300">
+                    Về Chúng Tôi
+                  </Link>
+                </li>
+                <li>
+                  <Link href="#philosophy" className="text-white/60 hover:text-primary transition-colors duration-300">
+                    Triết Lý Dịch Vụ
+                  </Link>
+                </li>
+                <li>
+                  <Link href="#solutions" className="text-white/60 hover:text-primary transition-colors duration-300">
+                    Giải Pháp Đào Tạo
+                  </Link>
+                </li>
+                <li>
+                  <Link href="#process" className="text-white/60 hover:text-primary transition-colors duration-300">
+                    Quy Trình Triển Khai
+                  </Link>
+                </li>
+              </ul>
+            </div>
 
-              {/* Phone */}
-              <div className="mb-6">
-                <div className="flex items-start gap-3">
-                  <img
-                    src="/assets/img/icons/contact-phone2.svg"
-                    alt="Phone"
-                    className="w-5 h-5 mt-1 flex-shrink-0"
-                  />
-                  <div className="flex flex-col gap-1">
-                    <Link
-                      href="#"
-                      className="text-gray-400 hover:text-white text-sm transition"
-                    >
-                      USA: +91 02 2585 0556
-                    </Link>
-                    <Link
-                      href="#"
-                      className="text-gray-400 hover:text-white text-sm transition"
-                    >
-                      UK: +61 02 2585 0556
-                    </Link>
+            {/* Contact Section */}
+            <div>
+              <h3 className="text-white font-display font-semibold mb-6 text-lg tracking-wide">
+                Liên Hệ
+              </h3>
+              <ul className="space-y-4">
+                <li className="flex items-start gap-3">
+                  <div className="w-8 h-8 rounded-full bg-white/5 flex items-center justify-center shrink-0 mt-0.5">
+                    <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 text-primary" viewBox="0 0 20 20" fill="currentColor">
+                      <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
+                    </svg>
                   </div>
-                </div>
-              </div>
-
-              {/* Email */}
-              <div>
-                <div className="flex items-start gap-3">
-                  <img
-                    src="/assets/img/icons/contact-email2.svg"
-                    alt="Email"
-                    className="w-5 h-5 mt-1 flex-shrink-0"
-                  />
-                  <div className="flex flex-col gap-1">
-                    <Link
-                      href="#"
-                      className="text-gray-400 hover:text-white text-sm transition"
-                    >
-                      Contacthelp@Demoui.co
-                    </Link>
-                    <Link
-                      href="#"
-                      className="text-gray-400 hover:text-white text-sm transition"
-                    >
-                      Info@consultia.co
-                    </Link>
+                  <Link href="tel:+84123456789" className="text-white/60 hover:text-primary transition-colors duration-300">
+                    +84 123 456 789
+                  </Link>
+                </li>
+                <li className="flex items-start gap-3">
+                  <div className="w-8 h-8 rounded-full bg-white/5 flex items-center justify-center shrink-0 mt-0.5">
+                    <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 text-primary" viewBox="0 0 20 20" fill="currentColor">
+                      <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
+                      <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
+                    </svg>
                   </div>
-                </div>
-              </div>
+                  <Link href="mailto:hello@beon.vn" className="text-white/60 hover:text-primary transition-colors duration-300">
+                    hello@beon.vn
+                  </Link>
+                </li>
+              </ul>
             </div>
           </div>
 
           {/* Footer Bottom */}
-          <div className="border-t border-gray-800 pt-8">
-            <div className="flex flex-col md:flex-row md:justify-between md:items-center gap-4">
+          <div className="border-t border-white/10 pt-8 mt-12">
+            <div className="flex flex-col md:flex-row justify-between items-center gap-6">
               {/* Copyright */}
-              <p className="text-gray-500 text-sm">
-                © 2023 Consultia by fleexstudio. All Rights Reserved.
+              <p className="text-white/40 text-sm">
+                &copy; {new Date().getFullYear()} Beon. Tất cả quyền được bảo lưu.
               </p>
 
               {/* Social Links */}
-              <div className="flex gap-4">
-                <Link
-                  href="#"
-                  title="LinkedIn"
-                  className="w-10 h-10 flex items-center justify-center rounded-full bg-gray-800 hover:bg-blue-600 text-gray-400 hover:text-white transition duration-300"
-                >
-                  <i className="fa-brands fa-linkedin-in" />
-                </Link>
-                <Link
-                  href="#"
-                  title="Facebook"
-                  className="w-10 h-10 flex items-center justify-center rounded-full bg-gray-800 hover:bg-blue-600 text-gray-400 hover:text-white transition duration-300"
-                >
-                  <i className="fa-brands fa-facebook-f" />
-                </Link>
-                <Link
-                  href="#"
-                  title="Instagram"
-                  className="w-10 h-10 flex items-center justify-center rounded-full bg-gray-800 hover:bg-pink-600 text-gray-400 hover:text-white transition duration-300"
-                >
-                  <i className="fa-brands fa-instagram" />
-                </Link>
-                <Link
-                  href="#"
-                  title="TikTok"
-                  className="w-10 h-10 flex items-center justify-center rounded-full bg-gray-800 hover:bg-gray-700 text-gray-400 hover:text-white transition duration-300"
-                >
-                  <i className="fa-brands fa-tiktok" />
-                </Link>
+              <div className="flex gap-3">
+                {[
+                  { icon: "fa-linkedin-in", label: "LinkedIn", hover: "hover:bg-[#0A66C2]" },
+                  { icon: "fa-facebook-f", label: "Facebook", hover: "hover:bg-[#1877F2]" },
+                  { icon: "fa-tiktok", label: "TikTok", hover: "hover:bg-[#000000]" },
+                ].map((social) => (
+                  <Link
+                    key={social.label}
+                    href="#"
+                    title={social.label}
+                    className={`w-10 h-10 flex items-center justify-center rounded-full bg-white/5 text-white/60 hover:text-white transition-all duration-300 border border-white/5 ${social.hover}`}
+                  >
+                    <i className={`fa-brands ${social.icon}`} />
+                  </Link>
+                ))}
               </div>
             </div>
           </div>

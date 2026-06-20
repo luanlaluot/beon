@@ -1,187 +1,101 @@
-"use client";
 import Link from "next/link";
-import { useState } from "react";
 
 export default function Pricing() {
-  const [isToggled, setToggled] = useState(false);
-
-  const plans = isToggled
-    ? [
-        {
-          title: "Basic",
-          description:
-            "Create interactive forms that connect to your workflow.",
-          price: "$29/mo",
-          billing: "Billed Yearly",
-          highlight: true,
-          planText: "Everything you get with Basic",
-        },
-        {
-          title: "Plus",
-          description: "Make your forms more beautiful and on-brand analyze.",
-          price: "$199/mo",
-          billing: "Billed Yearly",
-          highlight: false,
-          planText: "Everything in Basic, Plus",
-        },
-        {
-          title: "Business",
-          description: "Make your forms more beautiful and on-brand analyze.",
-          price: "$399/mo",
-          billing: "Billed Yearly",
-          highlight: false,
-          planText: "Everything in Plus, Business",
-        },
-      ]
-    : [
-        {
-          title: "Basic",
-          description:
-            "Create interactive forms that connect to your workflow.",
-          price: "$19/mo",
-          billing: "Billed Monthly",
-          highlight: false,
-          planText: "Everything you get with Basic",
-        },
-        {
-          title: "Plus",
-          description: "Make your forms more beautiful and on-brand analyze.",
-          price: "$49/mo",
-          billing: "Billed Monthly",
-          highlight: true,
-          planText: "Everything in Basic, Plus",
-        },
-        {
-          title: "Business",
-          description: "Make your forms more beautiful and on-brand analyze.",
-          price: "$99/mo",
-          billing: "Billed Monthly",
-          highlight: false,
-          planText: "Everything in Plus, Business",
-        },
-      ];
+  const packages = [
+    {
+      title: "Corporate Training",
+      subtitle: "Đào tạo In-house",
+      desc: "Chương trình thiết kế may đo trực tiếp tại doanh nghiệp, giải quyết triệt để các vấn đề cốt lõi của tổ chức.",
+      icon: (
+        <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
+        </svg>
+      ),
+      delay: 800,
+    },
+    {
+      title: "E-learning Solution",
+      subtitle: "Giải pháp số hóa",
+      desc: "Số hóa bài giảng và xây dựng hệ thống học tập trực tuyến, giúp nhân sự chủ động học mọi lúc mọi nơi.",
+      icon: (
+        <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+        </svg>
+      ),
+      delay: 1000,
+    },
+    {
+      title: "Blended Learning",
+      subtitle: "Đào tạo hỗn hợp",
+      desc: "Kết hợp linh hoạt giữa đào tạo trực tiếp và E-learning, tối đa hóa hiệu quả tiếp thu và thực hành liên tục.",
+      icon: (
+        <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+        </svg>
+      ),
+      delay: 1200,
+    },
+  ];
 
   return (
-    <section className="py-20 bg-slate-50">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex flex-col items-center gap-8 text-center">
-          <div className="space-y-4">
-            <div
-              data-aos="fade-up"
-              data-aos-duration={600}
-              className="inline-flex items-center justify-center gap-3 rounded-full bg-orange-50 px-4 py-2 text-sm font-semibold uppercase tracking-[0.25em] text-orange-600"
-            >
-              <img
-                src="/assets/img/icons/hands.svg"
-                alt=""
-                className="h-5 w-5"
-              />
-              We Are Here For Your Tax Relief.
-            </div>
+    <section
+      className="py-24 bg-gradient-to-br from-primary via-[#0A4A87] to-foreground text-white relative overflow-hidden"
+      id="pricing"
+    >
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        {/* Header Section */}
+        <div className="flex flex-col lg:flex-row justify-between items-start lg:items-center gap-8 mb-16">
+          <div className="max-w-2xl">
             <h2
+              className="text-4xl sm:text-5xl font-display font-bold tracking-tight mb-6"
               data-aos="fade-up"
-              data-aos-duration={800}
-              className="text-3xl sm:text-4xl font-bold text-slate-900"
+              data-aos-duration="600"
             >
-              <span className="text-orange-600">We</span> offer best cost
-              effective tax consultation solution.
+              Price and Package
             </h2>
+            <p
+              className="text-lg leading-relaxed text-white/80"
+              data-aos="fade-up"
+              data-aos-duration="800"
+            >
+              BEON mang đến các gói giải pháp đào tạo linh hoạt, tối ưu chi phí nhưng vẫn đảm bảo chất lượng chuẩn tập đoàn – giúp doanh nghiệp SME đầu tư hiệu quả, học nhanh, áp dụng thật và đo lường được giá trị.
+            </p>
           </div>
-
           <div
             data-aos="fade-up"
-            data-aos-duration={1000}
-            className="inline-flex flex-col items-center justify-center gap-3 rounded-full bg-white p-1 shadow-sm sm:flex-row"
+            data-aos-duration="1000"
+            className="shrink-0"
           >
-            <button
-              type="button"
-              onClick={() => setToggled(false)}
-              className={`rounded-full px-5 py-3 text-sm font-semibold transition ${
-                !isToggled
-                  ? "bg-orange-500 text-white"
-                  : "bg-transparent text-slate-600 hover:text-slate-900"
-              }`}
+            <Link
+              href="#contact"
+              className="inline-flex items-center justify-center px-6 py-3 bg-white text-base text-primary font-bold rounded-xl hover:bg-white/90 transition-all duration-300 shadow-xl shadow-black/10 hover:-translate-y-1"
             >
-              Monthly
-            </button>
-            <button
-              type="button"
-              onClick={() => setToggled(true)}
-              className={`rounded-full px-5 py-3 text-sm font-semibold transition ${
-                isToggled
-                  ? "bg-orange-500 text-white"
-                  : "bg-transparent text-slate-600 hover:text-slate-900"
-              }`}
-            >
-              Yearly
-              <span className="ml-2 text-xs font-medium text-slate-500">
-                (20% Save)
-              </span>
-            </button>
+              Liên hệ ngay
+            </Link>
           </div>
         </div>
 
-        <div className="mt-14 grid gap-6 lg:grid-cols-3">
-          {plans.map((plan, index) => (
+        {/* Cards Section */}
+        <div className="grid gap-6 md:grid-cols-3">
+          {packages.map((pkg, index) => (
             <div
               key={index}
+              className="flex flex-col items-center text-center p-10 rounded-3xl bg-white/10 border border-white/10 backdrop-blur-md hover:bg-white/20 hover:-translate-y-2 transition-all duration-300 group"
               data-aos="fade-up"
-              data-aos-duration={800 + index * 200}
-              className={`rounded-[2rem] border p-8 shadow-sm transition ${
-                plan.highlight
-                  ? "border-orange-300 bg-orange-50"
-                  : "border-slate-200 bg-white"
-              }`}
+              data-aos-duration={pkg.delay}
             >
-              <div className="space-y-4">
-                <p className="text-sm font-semibold uppercase tracking-[0.25em] text-orange-600">
-                  {plan.title}
-                </p>
-                <h5 className="text-base font-medium text-slate-700">
-                  {plan.description}
-                </h5>
-                <div className="space-y-1">
-                  <h3 className="text-4xl font-bold text-slate-900">
-                    {plan.price}
-                  </h3>
-                  <p className="text-sm text-slate-500">{plan.billing}</p>
-                </div>
-                <div className="space-y-4">
-                  <Link
-                    href="#"
-                    className={`inline-flex w-full items-center justify-center rounded-full px-5 py-3 text-sm font-semibold text-white transition ${
-                      plan.highlight
-                        ? "bg-orange-600 hover:bg-orange-700"
-                        : "bg-slate-900 hover:bg-slate-800"
-                    }`}
-                  >
-                    Get a Free Consultation
-                  </Link>
-                  <h4 className="text-sm font-semibold text-slate-900">
-                    {plan.planText}
-                  </h4>
-                  <ul className="space-y-2 text-sm text-slate-600">
-                    {[
-                      "Advanced Segmentation",
-                      "Comparative Reporting",
-                      "Unlimited Seats Role Access",
-                      "Multivaritive Testing",
-                      "Dynamic Content",
-                    ].map((item) => (
-                      <li key={item} className="flex items-start gap-3">
-                        <span className="mt-1 inline-flex h-6 w-6 items-center justify-center rounded-full bg-orange-100">
-                          <img
-                            src="/assets/img/icons/double-check2.png"
-                            alt=""
-                            className="h-4 w-4"
-                          />
-                        </span>
-                        <span>{item}</span>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
+              <div className="w-20 h-20 bg-white rounded-full flex items-center justify-center mb-8 shadow-lg group-hover:scale-110 transition-transform duration-300">
+                {pkg.icon}
               </div>
+              <h3 className="text-2xl font-display font-semibold mb-2">
+                {pkg.title}
+              </h3>
+              <p className="text-white/60 text-sm font-medium tracking-wider mb-4">
+                {pkg.subtitle}
+              </p>
+              <p className="text-white/80 leading-relaxed text-sm">
+                {pkg.desc}
+              </p>
             </div>
           ))}
         </div>

@@ -9,21 +9,20 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        primary: "#0f1f4c",
-        secondary: "#f15c3d",
-        accent: "#00bcd4",
+        primary: "var(--color-primary)",
+        "on-primary": "var(--color-on-primary)",
+        secondary: "var(--color-secondary)",
+        accent: "var(--color-accent)",
+        background: "var(--color-background)",
+        foreground: "var(--color-foreground)",
+        muted: "var(--color-muted)",
+        border: "var(--color-border)",
+        destructive: "var(--color-destructive)",
+        ring: "var(--color-ring)",
       },
       fontFamily: {
-        sans: [
-          "Be Vietnam Pro",
-          "ui-sans-serif",
-          "system-ui",
-          "-apple-system",
-          "Segoe UI",
-          "Roboto",
-          "Helvetica Neue",
-          "Arial",
-        ],
+        sans: ["Be Vietnam Pro", "ui-sans-serif", "system-ui", "sans-serif"],
+        display: ["Be Vietnam Pro", "ui-sans-serif", "system-ui", "sans-serif"],
       },
       spacing: {
         128: "32rem",
