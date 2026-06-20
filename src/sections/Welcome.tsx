@@ -92,8 +92,8 @@ export default function Welcome() {
           >
             <div className="relative rounded-2xl overflow-hidden shadow-2xl border-4 border-white transform rotate-2 hover:rotate-0 transition-transform duration-500">
               <img
-                className="w-full h-auto object-cover aspect-[4/5]"
-                src="/assets/img/bg/main2.jpg"
+                className="w-full h-auto object-cover aspect-[1/1]"
+                src="/assets/img/about/about-5.jpg"
                 alt="Beon Team Workspace"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent"></div>

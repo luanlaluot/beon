@@ -2,6 +2,7 @@ import Layout from "@/components/layout/Layout";
 
 import About from "@/sections/About";
 import Contact from "@/sections/Contact";
+import HowItWork1 from "@/sections/HowItWork1";
 import Logo from "@/sections/Logo";
 import Pricing from "@/sections/Pricing";
 import ProcessCorporate from "@/sections/ProcessCorporate";
@@ -11,6 +12,7 @@ import TaxBusiness from "@/sections/TaxBusiness";
 import Team from "@/sections/Team";
 import Welcome from "@/sections/Welcome";
 import WhyChooseUs from "@/sections/WhyChooseUs";
+import Works from "@/sections/Works";
 
 export default function Page() {
   return (
@@ -21,7 +23,8 @@ export default function Page() {
       <WhyChooseUs />
       <TaxBusiness />
       <Team />
-      <ProcessElearning />
+      <Works />
+      {/* <ProcessElearning /> */}
       <ProcessCorporate />
       <Pricing />
       <Service />

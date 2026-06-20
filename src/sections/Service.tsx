@@ -18,7 +18,7 @@ export default function Service() {
             <div className="relative rounded-3xl overflow-hidden shadow-2xl border border-border group z-0">
               <div className="absolute inset-0 bg-primary/10 mix-blend-multiply group-hover:bg-transparent transition-colors duration-500 z-10"></div>
               <img
-                src="/assets/img/about/about21.png"
+                src="/assets/img/about/about1.jpg"
                 alt="Triết lý dịch vụ Beon"
                 className="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-700"
               />

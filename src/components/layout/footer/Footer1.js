@@ -33,35 +33,35 @@ export default function Footer1() {
                 Liên Hệ
               </h3>
               <ul className="space-y-4">
-                <li className="flex items-start gap-3">
+                <li className="flex items-center gap-3">
                   <div className="w-8 h-8 rounded-full bg-white/5 flex items-center justify-center shrink-0 mt-0.5">
                     <i className="fa-solid fa-phone text-base" />
                   </div>
                   <Link
                     href="tel:+84123456789"
-                    className="text-white/60 hover:text-primary transition-colors duration-300"
+                    className="text-white/60  text-sm hover:text-primary transition-colors duration-300"
                   >
                     +84 938 510 268
                   </Link>
                 </li>
-                <li className="flex items-start gap-3">
+                <li className="flex items-center gap-3">
                   <div className="w-8 h-8 rounded-full bg-white/5 flex items-center justify-center shrink-0 mt-0.5">
                     <i className="fa-solid fa-at text-base" />
                   </div>
                   <Link
                     href="mailto:hello@beon.vn"
-                    className="text-white/60 hover:text-primary transition-colors duration-300"
+                    className="text-white/60 text-sm hover:text-primary transition-colors duration-300"
                   >
                     consultant@beon.edu.vn
                   </Link>
                 </li>
-                <li className="flex items-start gap-3">
+                <li className="flex items-center gap-3">
                   <div className="w-8 h-8 rounded-full bg-white/5 flex items-center justify-center shrink-0 mt-0.5">
                     <i className="fa-solid fa-location-dot text-base" />
                   </div>
                   <Link
                     href="mailto:hello@beon.vn"
-                    className="text-white/60 hover:text-primary transition-colors duration-300"
+                    className="text-white/60 text-sm hover:text-primary transition-colors duration-300"
                   >
                     64 Le Cong Kieu St. Ben Thanh Ward, HCMC
                   </Link>
