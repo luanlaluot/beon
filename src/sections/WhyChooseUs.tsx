@@ -7,8 +7,8 @@ export default function WhyChooseUs() {
         </svg>
       ),
       colorStyle: "bg-primary/10 text-primary border-primary/20",
-      title: "Đo lường được tác động",
-      desc: "Chúng tôi tập trung vào kết quả đầu ra, không chỉ là nội dung – giúp bạn cải thiện hiệu suất, mức độ gắn kết và kết quả kinh doanh thực tế.",
+      title: "Practical Learning",
+      desc: "Mọi chương trình của BEON được thiết kế dựa trên tình huống thật trong công việc, giúp học viên không chỉ hiểu mà còn làm được, chuyển đổi tri thức thành hành động cụ thể mỗi ngày.",
       delay: 800,
     },
     {
@@ -18,8 +18,8 @@ export default function WhyChooseUs() {
         </svg>
       ),
       colorStyle: "bg-secondary/10 text-secondary border-secondary/20",
-      title: "May đo riêng cho doanh nghiệp",
-      desc: "Không có hai tổ chức nào giống nhau. Chúng tôi thiết kế các giải pháp phù hợp với con người, mục tiêu và văn hóa đặc thù của bạn.",
+      title: "Agile Solution",
+      desc: "BEON hiểu rằng mỗi doanh nghiệp SME có đặc thù riêng. Vì thế, mọi giải pháp đều được tùy chỉnh linh hoạt, phù hợp với quy mô, ngành nghề và năng lực hiện có của tổ chức.",
       delay: 1000,
     },
     {
@@ -29,8 +29,8 @@ export default function WhyChooseUs() {
         </svg>
       ),
       colorStyle: "bg-accent/10 text-accent border-accent/20",
-      title: "Tiêu chuẩn quốc tế, am hiểu nội địa",
-      desc: "Với kinh nghiệm thực chiến đa ngành nghề, chúng tôi mang đến những bài học có giá trị cộng hưởng sâu sắc với nguồn nhân lực đa dạng.",
+      title: "Quality First",
+      desc: "Từ nội dung, giảng viên đến phương pháp đào tạo, BEON duy trì chuẩn mực chất lượng tương đương các tập đoàn lớn, đảm bảo doanh nghiệp SME vẫn được trải nghiệm dịch vụ đào tạo đẳng cấp cao.",
       delay: 1200,
     },
     {
@@ -40,8 +40,8 @@ export default function WhyChooseUs() {
         </svg>
       ),
       colorStyle: "bg-orange-500/10 text-orange-500 border-orange-500/20",
-      title: "Công nghệ & Chiến lược hội tụ",
-      desc: "Chúng tôi kết hợp hệ thống nền tảng, nội dung chuyên sâu và tư vấn chiến lược – mang lại cho bạn một trải nghiệm học tập liền mạch.",
+      title: "Empowerment",
+      desc: "BEON tin rằng phát triển con người chính là nền tảng phát triển doanh nghiệp. Mỗi khóa học là cơ hội để mỗi cá nhân tự tin hơn, chủ động hơn và tạo ra giá trị lớn hơn cho chính mình và tổ chức.",
       delay: 1400,
     },
   ];
@@ -71,9 +71,6 @@ export default function WhyChooseUs() {
             <p>
               Giải pháp học tập tại doanh nghiệp của chúng tôi là sự kết hợp giữa khoa học hành vi, công nghệ đào tạo và nội dung từ chuyên gia để tạo ra những tác động đo lường được, không chỉ là bề nổi. Chúng tôi không chỉ "cung cấp khóa học" — chúng tôi xây dựng năng lực bền vững.
             </p>
-            <p>
-              Khám phá các <a href="#" className="text-primary hover:underline font-medium">báo cáo & hướng dẫn</a> của chúng tôi hoặc <a href="#contact" className="text-primary hover:underline font-medium">đặt lịch tư vấn (demo)</a> để xem chúng tôi có thể giúp tổ chức của bạn như thế nào.
-            </p>
           </div>
         </div>
 
@@ -81,17 +78,17 @@ export default function WhyChooseUs() {
           {cards.map((card, index) => (
             <div
               key={index}
-              className={`flex flex-col items-start p-8 rounded-[2rem] border border-border bg-white shadow-sm hover:shadow-xl hover:border-primary/30 hover:-translate-y-2 transition-all duration-300 group`}
+              className={`flex flex-col items-center p-8 rounded-[2rem] border border-border  shadow-sm hover:shadow-xl hover:border-primary/30 hover:-translate-y-2 transition-all duration-300 group`}
               data-aos="fade-up"
               data-aos-duration={card.delay}
             >
               <div className={`w-16 h-16 rounded-2xl border ${card.colorStyle} flex items-center justify-center mb-6 shrink-0 group-hover:scale-110 group-hover:rotate-3 transition-transform duration-300`}>
                 {card.icon}
               </div>
-              <h3 className="text-xl sm:text-2xl font-display font-semibold text-foreground mb-4 group-hover:text-primary transition-colors">
+              <h3 className="text-center text-xl sm:text-2xl font-display font-semibold text-foreground mb-4 group-hover:text-primary transition-colors">
                 {card.title}
               </h3>
-              <p className="text-base text-foreground/70 leading-relaxed">
+              <p className="text-center text-base text-foreground/70 leading-relaxed">
                 {card.desc}
               </p>
             </div>

@@ -70,16 +70,18 @@ export default function HowItWork1() {
                 data-aos-duration={800 + index * 100}
                 className="text-center group"
               >
-                <div className="relative mb-8 inline-block">
-                  <div className="w-40 h-40 rounded-full overflow-hidden border-4 border-muted group-hover:border-primary/30 transition-colors duration-500 shadow-lg">
+                <div className="relative mb-8 w-full">
+                  <div className="w-full h-56 rounded-2xl overflow-hidden border border-border group-hover:border-primary/30 transition-colors duration-500 shadow-lg bg-muted">
                     <img
                       src={step.image}
                       alt={step.title}
                       className="w-full h-full object-cover group-hover:scale-110 grayscale group-hover:grayscale-0 transition-all duration-500"
                     />
                   </div>
-                  <div className="absolute -bottom-4 left-1/2 -translate-x-1/2 w-10 h-10 rounded-full bg-primary text-white font-bold flex items-center justify-center text-lg shadow-md border-2 border-white">
-                    {step.number}
+                  <div className="absolute -bottom-6 left-1/2 -translate-x-1/2 w-14 h-14 rounded-full bg-primary flex items-center justify-center shadow-lg shadow-primary/30 z-10">
+                    <div className="w-12 h-12 rounded-full border-2 border-dashed border-white/60 flex items-center justify-center">
+                      <span className="text-white font-display font-bold text-base leading-none">{step.number}</span>
+                    </div>
                   </div>
                 </div>
                 <h3 className="text-xl sm:text-2xl font-display font-semibold text-foreground mb-3">{step.title}</h3>
@@ -99,16 +101,18 @@ export default function HowItWork1() {
                 data-aos-duration={1100 + index * 100}
                 className="text-center group"
               >
-                <div className="relative mb-8 inline-block">
-                  <div className="w-40 h-40 rounded-full overflow-hidden border-4 border-muted group-hover:border-primary/30 transition-colors duration-500 shadow-lg">
+                <div className="relative mb-8 w-full">
+                  <div className="w-full h-56 rounded-2xl overflow-hidden border border-border group-hover:border-primary/30 transition-colors duration-500 shadow-lg bg-muted">
                     <img
                       src={step.image}
                       alt={step.title}
                       className="w-full h-full object-cover group-hover:scale-110 grayscale group-hover:grayscale-0 transition-all duration-500"
                     />
                   </div>
-                  <div className="absolute -bottom-4 left-1/2 -translate-x-1/2 w-10 h-10 rounded-full bg-primary text-white font-bold flex items-center justify-center text-lg shadow-md border-2 border-white">
-                    {step.number}
+                  <div className="absolute -bottom-6 left-1/2 -translate-x-1/2 w-14 h-14 rounded-full bg-primary flex items-center justify-center shadow-lg shadow-primary/30 z-10">
+                    <div className="w-12 h-12 rounded-full border-2 border-dashed border-white/60 flex items-center justify-center">
+                      <span className="text-white font-display font-bold text-base leading-none">{step.number}</span>
+                    </div>
                   </div>
                 </div>
                 <h3 className="text-xl sm:text-2xl font-display font-semibold text-foreground mb-3">{step.title}</h3>

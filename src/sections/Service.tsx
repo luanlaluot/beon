@@ -8,16 +8,44 @@ export default function Service() {
         <div className="grid gap-16 lg:grid-cols-2 items-center">
           
           <div
-            className="relative rounded-3xl overflow-hidden shadow-2xl border border-border group"
+            className="relative w-full max-w-md mx-auto lg:max-w-none"
             data-aos="zoom-out"
             data-aos-duration="800"
           >
-            <div className="absolute inset-0 bg-primary/10 mix-blend-multiply group-hover:bg-transparent transition-colors duration-500 z-10"></div>
-            <img
-              src="/assets/img/about/about21.png"
-              alt="Triết lý dịch vụ Beon"
-              className="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-700"
-            />
+            {/* Image Box */}
+            <div className="relative rounded-3xl overflow-hidden shadow-2xl border border-border group z-0">
+              <div className="absolute inset-0 bg-primary/10 mix-blend-multiply group-hover:bg-transparent transition-colors duration-500 z-10"></div>
+              <img
+                src="/assets/img/about/about21.png"
+                alt="Triết lý dịch vụ Beon"
+                className="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-700"
+              />
+            </div>
+
+            {/* Floating Saction Texts */}
+            <div 
+              className="absolute top-12 -left-6 sm:-left-12 bg-white px-6 py-3 rounded-2xl shadow-xl border border-border/50 z-20 text-foreground font-display font-medium text-sm sm:text-base hover:-translate-y-1 transition-transform duration-300"
+              data-aos="fade-right"
+              data-aos-delay="200"
+            >
+              Học đúng trọng tâm
+            </div>
+            
+            <div 
+              className="absolute bottom-28 -left-4 sm:-left-8 bg-white px-6 py-3 rounded-2xl shadow-xl border border-border/50 z-20 text-foreground font-display font-medium text-sm sm:text-base hover:-translate-y-1 transition-transform duration-300"
+              data-aos="fade-right"
+              data-aos-delay="400"
+            >
+              Phát triển bền vững
+            </div>
+
+            <div 
+              className="absolute top-[50%] -right-2 sm:-right-8 bg-white px-6 py-3 rounded-2xl shadow-xl border border-border/50 z-20 text-foreground font-display font-medium text-sm sm:text-base hover:-translate-y-1 transition-transform duration-300"
+              data-aos="fade-left"
+              data-aos-delay="600"
+            >
+              Ứng dụng hiệu quả
+            </div>
           </div>
           
           <div className="space-y-8">
@@ -40,7 +68,7 @@ export default function Service() {
                 data-aos-duration="1000"
                 className="text-lg leading-relaxed"
               >
-                BEON tin rằng 80% kết quả phát triển năng lực đến từ 20% hoạt động học tập được thiết kế đúng trọng tâm. Chúng tôi loại bỏ sự cồng kềnh, tập trung vào giá trị thực chất.
+                BEON tin rằng <span className="text-3xl font-bold text-primary">80%</span> kết quả phát triển năng lực đến từ <span className="text-3xl font-bold text-primary">20%</span> hoạt động học tập được thiết kế đúng trọng tâm. Chúng tôi loại bỏ sự cồng kềnh, tập trung vào giá trị thực chất.
               </p>
               <div
                 data-aos="fade-left"

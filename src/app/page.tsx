@@ -5,10 +5,11 @@ import Contact from "@/sections/Contact";
 import HowItWork1 from "@/sections/HowItWork1";
 import Logo from "@/sections/Logo";
 import Pricing from "@/sections/Pricing";
+import ProcessCorporate from "@/sections/ProcessCorporate";
+import ProcessElearning from "@/sections/ProcessElearning";
 import Service from "@/sections/Service";
 import TaxBusiness from "@/sections/TaxBusiness";
-import User1 from "@/sections/User1";
-import User2 from "@/sections/User2";
+import Team from "@/sections/Team";
 import Welcome from "@/sections/Welcome";
 import WhyChooseUs from "@/sections/WhyChooseUs";
 import Works from "@/sections/Works";
@@ -21,12 +22,12 @@ export default function Page() {
       <About />
       <WhyChooseUs />
       <TaxBusiness />
-      <HowItWork1 />
-      <Works />
-      <User1 />
-      <User2 />
+      <Team />
+      <ProcessElearning />
+      <ProcessCorporate />
+      {/* <HowItWork1 /> */}
+      {/* <Works /> */}
       <Pricing />
-
       <Service />
       <Contact />
     </Layout>
