@@ -1,5 +1,5 @@
 import Link from "next/link";
-export default function Footer1() {
+export default function Footer() {
   return (
     <>
       <footer className="bg-foreground text-white/80 pt-20 pb-10 border-t border-white/10 relative overflow-hidden">

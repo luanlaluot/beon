@@ -1,8 +1,8 @@
 import Layout from "@/components/layout/Layout";
 
 import About from "@/sections/About";
+import CaseStudy from "@/sections/CaseStudy";
 import Contact from "@/sections/Contact";
-import HowItWork1 from "@/sections/HowItWork1";
 import Logo from "@/sections/Logo";
 import Pricing from "@/sections/Pricing";
 import ProcessCorporate from "@/sections/ProcessCorporate";
@@ -24,7 +24,7 @@ export default function Page() {
       <TaxBusiness />
       <Team />
       <Works />
-      {/* <ProcessElearning /> */}
+      {/* <CaseStudy /> */}
       <ProcessCorporate />
       <Pricing />
       <Service />
