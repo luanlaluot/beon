@@ -23,16 +23,16 @@ export default function About() {
 
           {/* Right Content Side */}
           <div className="space-y-10">
-            <div className="space-y-4">
-              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-accent/10 text-accent font-semibold text-sm">
+            <div className="space-y-6">
+              <div className="inline-flex items-center px-5 py-2 rounded-full bg-primary text-white font-bold text-sm tracking-wide">
                 Về Chúng Tôi
               </div>
               <h2
                 data-aos="fade-up"
                 data-aos-duration="800"
-                className="text-4xl sm:text-5xl font-display font-bold text-foreground leading-tight tracking-tight"
+                className="text-3xl sm:text-5xl font-display font-black text-[#111827] leading-[1.1] tracking-tight"
               >
-                Giải phóng tiềm năng của <span className="text-secondary">SME Việt Nam</span>
+                Giải phóng tiềm năng của <span className="text-primary">SME Việt Nam</span>
               </h2>
               <p
                 data-aos="fade-up"
@@ -43,30 +43,33 @@ export default function About() {
               </p>
             </div>
 
-            <div className="grid gap-8 sm:grid-cols-2 pt-6 border-t border-border">
-              <div data-aos="fade-up" data-aos-duration="1100" className="bg-white p-6 rounded-2xl shadow-sm border border-border/50 hover:shadow-md transition-shadow">
-                <div className="w-12 h-12 bg-primary/10 text-primary rounded-xl flex items-center justify-center mb-4">
-                  <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
+            <div className="flex flex-col gap-10 pt-6 border-t">
+              <div data-aos="fade-up" data-aos-duration="1100" className="flex items-start gap-4">
+                <div className="mt-1 flex shrink-0 items-center justify-center w-7 h-7 rounded-full bg-[#007CD8] text-white">
+                  <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                    <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                   </svg>
                 </div>
-                <h3 className="text-2xl font-display font-semibold text-foreground mb-3">Tầm Nhìn</h3>
-                <p className="text-foreground/70 leading-relaxed text-sm">
-                  Trở thành đối tác chiến lược số 1 cung cấp giải pháp đào tạo & E-learning toàn diện cho doanh nghiệp, kiến tạo nền tảng nhân sự bền vững vững vàng.
-                </p>
+                <div>
+                  <h3 className="text-xl sm:text-2xl font-display font-bold text-foreground mb-3">Tầm nhìn</h3>
+                  <p className="text-base text-foreground/70 leading-relaxed">
+                    Trở thành đơn vị hàng đầu cung cấp giải pháp đào tạo & E-learning toàn diện cho SME, giúp các tổ chức nâng cao năng lực nhân sự bằng công nghệ học tập tiên tiến.
+                  </p>
+                </div>
               </div>
 
-              <div data-aos="fade-up" data-aos-duration="1200" className="bg-white p-6 rounded-2xl shadow-sm border border-border/50 hover:shadow-md transition-shadow">
-                <div className="w-12 h-12 bg-accent/10 text-accent rounded-xl flex items-center justify-center mb-4">
-                  <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
+              <div data-aos="fade-up" data-aos-duration="1200" className="flex items-start gap-4">
+                <div className="mt-1 flex shrink-0 items-center justify-center w-7 h-7 rounded-full bg-[#007CD8] text-white">
+                  <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                    <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                   </svg>
                 </div>
-                <h3 className="text-2xl font-display font-semibold text-foreground mb-3">Sứ Mệnh</h3>
-                <p className="text-foreground/70 leading-relaxed text-sm">
-                  Giúp SME “bật công tắc học tập” bằng giải pháp linh hoạt, tiết kiệm chi phí mà vẫn đảm bảo chuẩn mực chất lượng và hiệu quả thực tiễn tối ưu.
-                </p>
+                <div>
+                  <h3 className="text-xl sm:text-2xl font-display font-bold text-foreground mb-3">Sứ mệnh</h3>
+                  <p className="text-base text-foreground/70 leading-relaxed">
+                    BEON Academy giúp doanh nghiệp SME “bật công tắc học tập” thông qua giải pháp đào tạo linh hoạt, dễ triển khai và tiết kiệm chi phí – nhưng vẫn giữ chuẩn mực chất lượng, chuyên nghiệp, và hiệu quả thực tiễn.
+                  </p>
+                </div>
               </div>
             </div>
           </div>

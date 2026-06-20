@@ -57,7 +57,7 @@ export default function WhyChooseUs() {
             Giá Trị Khác Biệt
           </div>
           <h2
-            className="text-4xl sm:text-5xl font-display font-bold text-foreground tracking-tight mb-8"
+            className="text-3xl sm:text-5xl font-display font-bold text-foreground tracking-tight mb-8"
             data-aos="fade-up"
             data-aos-duration="800"
           >
@@ -88,10 +88,10 @@ export default function WhyChooseUs() {
               <div className={`w-16 h-16 rounded-2xl border ${card.colorStyle} flex items-center justify-center mb-6 shrink-0 group-hover:scale-110 group-hover:rotate-3 transition-transform duration-300`}>
                 {card.icon}
               </div>
-              <h3 className="text-xl font-display font-semibold text-foreground mb-4 group-hover:text-primary transition-colors">
+              <h3 className="text-xl sm:text-2xl font-display font-semibold text-foreground mb-4 group-hover:text-primary transition-colors">
                 {card.title}
               </h3>
-              <p className="text-foreground/70 leading-relaxed text-sm">
+              <p className="text-base text-foreground/70 leading-relaxed">
                 {card.desc}
               </p>
             </div>

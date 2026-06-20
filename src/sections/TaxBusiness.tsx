@@ -12,57 +12,67 @@ export default function TaxBusiness() {
           <h2
             data-aos="fade-up"
             data-aos-duration="600"
-            className="text-4xl sm:text-5xl font-display font-bold tracking-tight mb-6"
+            className="text-3xl sm:text-5xl font-display font-bold tracking-tight mb-6"
           >
-            Giải Pháp Đào Tạo <span className="text-white opacity-90 border-b-4 border-white/30 pb-1">Khác Biệt</span>
+            Giải Pháp Đào Tạo <span className="text-blue-200">Khác Biệt</span>
           </h2>
           <p
             data-aos="fade-up"
             data-aos-duration="800"
-            className="text-lg leading-relaxed text-on-primary/80"
+            className="text-base text-white/80 leading-relaxed"
           >
-            Triển khai nhanh, chi phí tối ưu và đạt chuẩn chuyên nghiệp. Các chương trình được thiết kế thực tiễn, học để áp dụng ngay trên nền tảng quản lý hiện đại.
+            Chúng tôi không chỉ cung cấp các khóa học rời rạc. Beon Academy mang đến hệ thống E-learning toàn diện và lộ trình đào tạo được may đo riêng, giúp doanh nghiệp phát triển bền vững từ bên trong.
           </p>
         </div>
-        
-        <div className="grid gap-8 lg:grid-cols-2">
-          {/* Block 1 */}
-          <div
-            className="rounded-3xl p-10 bg-on-primary/5 border border-on-primary/10 backdrop-blur-md hover:bg-on-primary/10 transition-colors duration-300 group"
-            data-aos="fade-up"
-            data-aos-duration="800"
-          >
-            <div className="w-16 h-16 bg-accent rounded-2xl flex items-center justify-center mb-6 text-white transform group-hover:rotate-12 transition-transform duration-300 shadow-lg shadow-accent/20">
-              <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
-              </svg>
-            </div>
-            <h3 className="text-3xl font-display font-semibold mb-4 text-on-primary">
-              Huấn Luyện Dịch Vụ Khách Hàng
-            </h3>
-            <p className="text-lg text-on-primary/80 leading-relaxed">
-              Các chương trình đào tạo chuyên sâu về kỹ năng chăm sóc và dịch vụ khách hàng dành riêng cho doanh nghiệp trong lĩnh vực F&B, Bán lẻ và Dịch vụ (Hospitality).
-            </p>
-          </div>
 
-          {/* Block 2 */}
-          <div
-            className="rounded-3xl p-10 bg-on-primary/5 border border-on-primary/10 backdrop-blur-md hover:bg-on-primary/10 transition-colors duration-300 group"
-            data-aos="fade-up"
-            data-aos-duration="1000"
-          >
-            <div className="w-16 h-16 bg-secondary rounded-2xl flex items-center justify-center mb-6 text-white transform group-hover:-rotate-12 transition-transform duration-300 shadow-lg shadow-secondary/20">
-              <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-              </svg>
+        <div className="grid gap-6 md:grid-cols-3">
+          {[
+            {
+              title: "Tư Vấn Thiết Kế Lộ Trình",
+              desc: "Khảo sát và xây dựng lộ trình học tập bám sát mục tiêu kinh doanh và văn hóa của doanh nghiệp.",
+              icon: "fa-solid fa-map-location-dot"
+            },
+            {
+              title: "Hệ Thống LMS Chuyên Biệt",
+              desc: "Triển khai nền tảng quản lý học tập (LMS) thân thiện, bảo mật và dễ dàng theo dõi tiến độ nhân sự.",
+              icon: "fa-solid fa-laptop-code"
+            },
+            {
+              title: "Số Hóa Bài Giảng (E-learning)",
+              desc: "Chuyển đổi tài liệu truyền thống thành bài giảng tương tác cao (Video, SCORM, Gamification...).",
+              icon: "fa-solid fa-photo-film"
+            },
+            {
+              title: "Đào Tạo Trực Tiếp (In-house)",
+              desc: "Đội ngũ chuyên gia Beon trực tiếp huấn luyện nhân sự với các case-study thực tế từ thị trường.",
+              icon: "fa-solid fa-chalkboard-user"
+            },
+            {
+              title: "Xây Dựng Văn Hóa Học Tập",
+              desc: "Tổ chức các chiến dịch truyền thông nội bộ giúp khơi dậy tinh thần tự học của nhân viên.",
+              icon: "fa-solid fa-seedling"
+            },
+            {
+              title: "Đánh Giá & Đo Lường (ROI)",
+              desc: "Cung cấp báo cáo phân tích chi tiết về hiệu quả đào tạo và sự cải thiện năng lực thực tế.",
+              icon: "fa-solid fa-chart-line"
+            },
+          ].map((feature, index) => (
+            <div
+              key={index}
+              data-aos="fade-up"
+              data-aos-duration={800 + index * 100}
+              className="group p-8 rounded-3xl bg-white/10 border border-white/10 hover:bg-white/20 transition-all duration-300 backdrop-blur-sm"
+            >
+              <div className="w-14 h-14 bg-white/20 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+                <i className={`${feature.icon} text-2xl text-white`} />
+              </div>
+              <h3 className="text-xl sm:text-2xl font-display font-semibold mb-3">{feature.title}</h3>
+              <p className="text-base text-white/80 leading-relaxed">
+                {feature.desc}
+              </p>
             </div>
-            <h3 className="text-3xl font-display font-semibold mb-4 text-on-primary">
-              Chuyển Đổi E-learning (SME)
-            </h3>
-            <p className="text-lg text-on-primary/80 leading-relaxed">
-              Thiết kế theo tiêu chí: nhanh – hiệu quả – chi phí hợp lý. Giúp tổ chức chuyển từ đào tạo truyền thống sang mô hình học tập trực tuyến linh hoạt, đo lường được ngay.
-            </p>
-          </div>
+          ))}
         </div>
       </div>
     </section>

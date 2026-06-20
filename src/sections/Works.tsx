@@ -11,14 +11,14 @@ export default function Works() {
               <h2
                 data-aos="fade-up"
                 data-aos-duration="600"
-                className="text-4xl sm:text-5xl font-display font-bold text-white leading-tight tracking-tight"
+                className="text-3xl sm:text-5xl font-display font-bold text-white leading-tight tracking-tight"
               >
                 Lợi ích mang lại cho <span className="text-secondary underline decoration-secondary/50 underline-offset-4">doanh nghiệp</span> của bạn
               </h2>
               <p
                 data-aos="fade-up"
                 data-aos-duration="800"
-                className="text-white/80 text-lg leading-relaxed max-w-lg"
+                className="text-base text-white/80 leading-relaxed max-w-lg"
               >
                 Beon cam kết mang lại hiệu quả đo lường được thông qua các giải pháp số hóa đào tạo và nâng cao năng lực nhân sự, giúp doanh nghiệp tiết kiệm tài nguyên và phát triển bứt phá.
               </p>
@@ -63,10 +63,10 @@ export default function Works() {
                 </div>
 
                 <div className="relative z-10 flex flex-col flex-1">
-                  <h3 className="text-xl font-display font-semibold text-white mb-3 group-hover:text-secondary transition-colors">
+                  <h3 className="text-xl sm:text-2xl font-display font-semibold text-white mb-3 group-hover:text-secondary transition-colors">
                     {step.title}
                   </h3>
-                  <p className="text-white/80 leading-relaxed text-sm">
+                  <p className="text-base text-white/80 leading-relaxed">
                     {step.desc}
                   </p>
                 </div>
