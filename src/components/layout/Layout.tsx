@@ -3,7 +3,6 @@
 import { type ReactNode, useEffect, useState } from "react";
 import BackToTop from "../elements/BackToTop";
 import Breadcrumb from "./Breadcrumb";
-import DemoSidebar from "./DemoSidebar";
 import MobileMenu from "./MobileMenu";
 import PageHead from "./PageHead";
 import Footer1 from "./footer/Footer1";
@@ -57,7 +56,6 @@ export default function Layout({
       {breadcrumbTitle && <Breadcrumb breadcrumbTitle={breadcrumbTitle} />}
       {children}
       <Footer1 />
-      <DemoSidebar />
       <BackToTop scroll={scroll} />
     </>
   );
