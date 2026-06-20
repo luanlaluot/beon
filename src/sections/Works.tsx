@@ -5,7 +5,7 @@ export default function Works() {
         <div className="grid gap-16 lg:grid-cols-2">
           <div className="space-y-8">
             <div className="space-y-6 sticky top-24">
-              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/10 text-white font-semibold text-sm border border-white/20 backdrop-blur-sm">
+              <div className="inline-flex items-center gap-2 px-5 py-2 rounded-full bg-white/10 text-white font-semibold text-sm border border-white/20 backdrop-blur-sm">
                 Giá Trị Cốt Lõi
               </div>
               <h2
@@ -13,7 +13,7 @@ export default function Works() {
                 data-aos-duration="600"
                 className="text-3xl sm:text-5xl font-display font-bold text-white leading-tight tracking-tight"
               >
-                Lợi ích mang lại cho <span className="text-secondary underline decoration-secondary/50 underline-offset-4">doanh nghiệp</span> của bạn
+                Lợi ích mang lại cho <span className="text-white underline decoration-secondary/50 underline-offset-4">doanh nghiệp</span> của bạn
               </h2>
               <p
                 data-aos="fade-up"
@@ -63,7 +63,7 @@ export default function Works() {
                 </div>
 
                 <div className="relative z-10 flex flex-col flex-1">
-                  <h3 className="text-xl sm:text-2xl font-display font-semibold text-white mb-3 group-hover:text-secondary transition-colors">
+                  <h3 className="text-xl sm:text-2xl font-display font-semibold text-white mb-3 group-hover:text-white transition-colors">
                     {step.title}
                   </h3>
                   <p className="text-base text-white/80 leading-relaxed">

@@ -14,49 +14,29 @@ export default function TaxBusiness() {
             data-aos-duration="600"
             className="text-3xl sm:text-5xl font-display font-bold tracking-tight mb-6"
           >
-            Giải Pháp Đào Tạo <span className="text-blue-200">Khác Biệt</span>
+            Giải Pháp Đào Tạo <span className="text-blue-300">Khác Biệt</span>
           </h2>
           <p
             data-aos="fade-up"
             data-aos-duration="800"
             className="text-base text-white/80 leading-relaxed"
           >
-            Chúng tôi không chỉ cung cấp các khóa học rời rạc. Beon Academy mang đến hệ thống E-learning toàn diện và lộ trình đào tạo được may đo riêng, giúp doanh nghiệp phát triển bền vững từ bên trong.
+            {'BEON mang đến giải pháp đào tạo toàn diện cho SME, giúp doanh nghiệp triển khai nhanh, chi phí hợp lý nhưng vẫn đạt chuẩn chuyên nghiệp. Các chương trình được thiết kế thực tiễn, học để áp dụng ngay, tích hợp trên hệ thống học tập hiện đại, dễ quản lý tiến độ.'}
           </p>
         </div>
 
-        <div className="grid gap-6 md:grid-cols-3">
+        <div className="grid gap-6 md:grid-cols-2">
           {[
             {
-              title: "Tư Vấn Thiết Kế Lộ Trình",
-              desc: "Khảo sát và xây dựng lộ trình học tập bám sát mục tiêu kinh doanh và văn hóa của doanh nghiệp.",
+              title: "CORPORATE TRAINING",
+              desc: "BEON mang đến các chương trình đào tạo chuyên sâu về dịch vụ khách hàng dành cho doanh nghiệp trong lĩnh vực F&B, Bán lẻ và Dịch vụ (Hospitality). ",
               icon: "fa-solid fa-map-location-dot"
             },
             {
-              title: "Hệ Thống LMS Chuyên Biệt",
-              desc: "Triển khai nền tảng quản lý học tập (LMS) thân thiện, bảo mật và dễ dàng theo dõi tiến độ nhân sự.",
+              title: "CORPORATE TRAINING",
+              desc: "Giải pháp “E-learning for SME” được thiết kế theo tiêu chí: nhanh – hiệu quả – chi phí hợp lý, giúp doanh nghiệp chuyển đổi từ đào tạo truyền thống sang mô hình học tập linh hoạt và đo lường được hiệu quả.",
               icon: "fa-solid fa-laptop-code"
-            },
-            {
-              title: "Số Hóa Bài Giảng (E-learning)",
-              desc: "Chuyển đổi tài liệu truyền thống thành bài giảng tương tác cao (Video, SCORM, Gamification...).",
-              icon: "fa-solid fa-photo-film"
-            },
-            {
-              title: "Đào Tạo Trực Tiếp (In-house)",
-              desc: "Đội ngũ chuyên gia Beon trực tiếp huấn luyện nhân sự với các case-study thực tế từ thị trường.",
-              icon: "fa-solid fa-chalkboard-user"
-            },
-            {
-              title: "Xây Dựng Văn Hóa Học Tập",
-              desc: "Tổ chức các chiến dịch truyền thông nội bộ giúp khơi dậy tinh thần tự học của nhân viên.",
-              icon: "fa-solid fa-seedling"
-            },
-            {
-              title: "Đánh Giá & Đo Lường (ROI)",
-              desc: "Cung cấp báo cáo phân tích chi tiết về hiệu quả đào tạo và sự cải thiện năng lực thực tế.",
-              icon: "fa-solid fa-chart-line"
-            },
+            }
           ].map((feature, index) => (
             <div
               key={index}

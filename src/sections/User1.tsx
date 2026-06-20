@@ -8,7 +8,7 @@ export default function User1() {
           
           <div className="space-y-8">
             <div className="space-y-4">
-              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-accent/10 text-accent font-semibold text-sm">
+              <div className="inline-flex items-center gap-2 px-5 py-2 rounded-full bg-primary text-white font-bold text-sm">
                 Đội Ngũ Chuyên Gia
               </div>
               <h2
@@ -49,6 +49,19 @@ export default function User1() {
               >
                 <strong>Chứng chỉ:</strong> Certified OKR (C-OKRP™), Certified PMP® (Google), Train the Trainer (Dale Carnegie), Instructional Design.
               </p>
+            </div>
+
+            <div 
+              className="flex items-center gap-4 pt-2"
+              data-aos="fade-right"
+              data-aos-duration="1300"
+            >
+              <a href="#" className="w-10 h-10 rounded-full bg-[#1877F2] flex items-center justify-center text-white hover:scale-110 hover:shadow-lg hover:shadow-[#1877F2]/30 transition-all duration-300">
+                <i className="fa-brands fa-facebook-f text-lg" />
+              </a>
+              <a href="#" className="w-10 h-10 rounded-full bg-[#0A66C2] flex items-center justify-center text-white hover:scale-110 hover:shadow-lg hover:shadow-[#0A66C2]/30 transition-all duration-300">
+                <i className="fa-brands fa-linkedin-in text-lg" />
+              </a>
             </div>
           </div>
 

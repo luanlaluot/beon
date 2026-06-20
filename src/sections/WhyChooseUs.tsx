@@ -53,7 +53,7 @@ export default function WhyChooseUs() {
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="text-center mx-auto max-w-4xl mb-16">
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 text-primary font-semibold text-sm mb-4">
+          <div className="inline-flex items-center gap-2 px-5 py-2 rounded-full bg-primary text-white font-semibold text-sm mb-4">
             Giá Trị Khác Biệt
           </div>
           <h2

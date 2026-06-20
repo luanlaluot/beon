@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function Welcome() {
   return (
-    <section className="relative pt-32 pb-20 overflow-hidden bg-background" id="home">
+    <section className="relative py-32 overflow-hidden bg-background" id="home">
       {/* Decorative Background Elements */}
       <div className="absolute top-0 left-0 w-full h-full overflow-hidden pointer-events-none z-0">
         <div className="absolute -top-[20%] -right-[10%] w-[50%] h-[50%] rounded-full bg-accent/10 blur-3xl" />
@@ -17,26 +17,31 @@ export default function Welcome() {
           <div className="flex flex-col justify-center">
             <div data-aos="fade-up" data-aos-duration="600" className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 text-primary font-semibold text-sm mb-6 w-max border border-primary/20">
               <span className="w-2 h-2 rounded-full bg-accent animate-pulse"></span>
-              Giải Pháp Số Hóa
+              Beon Academy
             </div>
             
             <h1 
               data-aos="fade-up" 
               data-aos-duration="800"
-              className="text-5xl lg:text-7xl font-display font-bold text-foreground leading-[1.1] mb-6 tracking-tight"
+              className="text-4xl lg:text-6xl font-display font-bold text-foreground leading-[1.1] mb-6 tracking-tight"
             >
-              Kiến Tạo<br/>
-              <span className="text-primary">Tăng Trưởng</span><br/>
-              Đột Phá
-            </h1>
+              POWERING<br/>
+              <span className="text-primary">ELEARNING</span><br/>TRANSFORMATION</h1>
             
             <p 
               data-aos="fade-up" 
               data-aos-duration="1000"
-              className="text-lg md:text-xl text-foreground/80 mb-10 max-w-lg leading-relaxed"
+              className="text-base md:text-lg text-foreground/80 max-w-lg leading-relaxed"
             >
-              Chúng tôi cung cấp các giải pháp tối ưu hóa vận hành và marketing, giúp doanh nghiệp SME Việt Nam vươn xa hơn trong kỷ nguyên số.
+              BEON – Powering Learning Transformation
             </p>
+
+            <p 
+              data-aos="fade-up" 
+              data-aos-duration="1000"
+              className="text-base md:text-lg text-foreground/80 mb-10 max-w-lg leading-relaxed"
+            >
+Giải pháp học tập & đào tạo thông minh cho doanh nghiệp SME Việt Nam            </p>
 
             <div
               data-aos="fade-up"
@@ -73,7 +78,7 @@ export default function Welcome() {
             </div>
             
             {/* Floating Element */}
-            <div className="absolute -bottom-10 -left-10 bg-white p-6 rounded-xl shadow-xl border border-border flex items-center gap-4 animate-bounce" style={{ animationDuration: '3s' }}>
+            {/* <div className="absolute -bottom-10 -left-10 bg-white p-6 rounded-xl shadow-xl border border-border flex items-center gap-4 animate-bounce" style={{ animationDuration: '3s' }}>
               <div className="w-12 h-12 bg-accent/20 rounded-full flex items-center justify-center text-accent">
                 <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
@@ -83,7 +88,7 @@ export default function Welcome() {
                 <p className="text-sm text-foreground/60 font-medium">Tăng trưởng</p>
                 <p className="text-xl font-display font-bold text-foreground">+150%</p>
               </div>
-            </div>
+            </div> */}
           </div>
 
         </div>
