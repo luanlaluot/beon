@@ -1,7 +1,7 @@
 import type { ReactNode } from "react";
 import "./globals.css";
 import "public/assets/css/master.css";
-// import "public/assets/css/aos.css";
+import "public/assets/css/aos.css";
 // Import plugin styles as needed
 import "public/assets/css/nice-select.css";
 import "public/assets/css/plugins/fontawesome.css";
