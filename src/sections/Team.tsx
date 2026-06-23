@@ -113,7 +113,7 @@ export default function Team() {
                   key={active}
                   src={member.image}
                   alt={member.name}
-                  className="w-full h-full object-cover transition-all duration-500 group-hover:scale-105"
+                  className="w-full h-full object-cover object-top transition-all duration-500 group-hover:scale-105"
                 />
                 <div
                   className={`absolute inset-0 bg-gradient-to-t ${member.gradient} to-transparent`}
