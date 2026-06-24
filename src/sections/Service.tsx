@@ -53,40 +53,50 @@ export default function Service() {
           <div className="space-y-8">
             <div className="space-y-4">
               <div className="inline-flex items-center px-5 py-2 rounded-full bg-primary text-white font-semibold text-sm backdrop-blur-md border border-accent/20">
-                Triết Lý Của Chúng Tôi
+                Our Service Philosophy
               </div>
               <h2
                 data-aos="fade-left"
                 data-aos-duration="800"
                 className="text-4xl sm:text-5xl font-display font-bold tracking-tight leading-tight"
               >
-                Đào tạo không chỉ là "Dạy", mà là sự{" "}
-                <span className="text-primary">Thay Đổi</span>
+                Training is not just about teaching, it is about{" "}
+                <span className="text-primary">Transformation</span>.
               </h2>
             </div>
 
             <div className="space-y-6 text-foreground/80">
-              <p
-                data-aos="fade-left"
-                data-aos-duration="1000"
-                className="text-lg leading-relaxed"
-              >
-                BEON tin rằng{" "}
-                <span className="text-3xl font-bold text-primary">80%</span> kết
-                quả phát triển năng lực đến từ{" "}
-                <span className="text-3xl font-bold text-primary">20%</span>{" "}
-                hoạt động học tập được thiết kế đúng trọng tâm. Chúng tôi loại
-                bỏ sự cồng kềnh, tập trung vào giá trị thực chất.
-              </p>
+              <ul className="list-disc list-inside space-y-2">
+                <li>
+                  <span className="font-bold">Focused Learning:</span> We
+                  prioritize what matters most to ensure meaningful progress
+                </li>
+                <li>
+                  <span className="font-bold">Transformational Outcomes:</span>{" "}
+                  Our learning experiences drive lasting change, transforming
+                  professional behavior and elevating business performance
+                </li>
+                <li>
+                  <span className="font-bold">Data-Driven Insights:</span> We
+                  use data to measure impact and continuously refine our
+                  approach, ensuring continuous improvement
+                </li>
+              </ul>
+
               <div
                 data-aos="fade-left"
                 data-aos-duration="1100"
                 className="p-6 bg-white border border-border rounded-2xl shadow-sm"
               >
                 <p className="text-base leading-relaxed italic text-foreground/70">
-                  "Chúng tôi không chạy theo 'đào tạo cho đủ', mà tập trung vào
-                  những trải nghiệm học tập mang lại thay đổi thật sự trong hành
-                  vi và hiệu suất công việc."
+                  "At BEON, we adhere to the principle that{" "}
+                  <span className="text-xl font-bold text-primary">80%</span> of
+                  development results come from{" "}
+                  <span className="text-xl font-bold text-primary">20%</span> of
+                  highly targeted learning activities. We move beyond "training
+                  for compliance" to deliver learning experiences that
+                  fundamentally transform professional behavior and elevate
+                  business performance. "
                 </p>
               </div>
             </div>
@@ -97,7 +107,7 @@ export default function Service() {
               data-aos="fade-left"
               data-aos-duration="1200"
             >
-              Lên lịch Tư Vấn Miễn Phí
+              Book your free consultation{" "}
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="h-5 w-5"

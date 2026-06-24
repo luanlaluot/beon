@@ -45,13 +45,13 @@ export default function Contact() {
       } else {
         setStatus({
           type: "error",
-          message: result.error || "Có lỗi xảy ra, vui lòng thử lại.",
+          message: result.error || "Something went wrong, please try again.",
         });
       }
     } catch (error) {
       setStatus({
         type: "error",
-        message: "Không thể kết nối đến máy chủ. Vui lòng kiểm tra lại mạng.",
+        message: "Unable to connect to the server. Please check your network.",
       });
     } finally {
       setIsSubmitting(false);
@@ -76,17 +76,17 @@ export default function Contact() {
             <div className="absolute inset-0 bg-gradient-to-tr from-primary/80 to-transparent z-10 mix-blend-multiply"></div>
             <img
               src="/assets/img/contact/contact-3.jpg"
-              alt="Liên hệ Beon"
+              alt="Contact Beon"
               className="w-full h-full object-cover min-h-[500px]"
             />
 
             <div className="absolute bottom-8 left-8 right-8 z-20 bg-white/10 backdrop-blur-md border border-white/20 p-6 rounded-2xl">
               <h3 className="text-2xl font-display font-bold text-white mb-2">
-                Đội ngũ Beon luôn sẵn sàng
+                The Beon team is always ready
               </h3>
               <p className="text-white/80">
-                Hỗ trợ để giải đáp mọi thắc mắc về lộ trình chuyển đổi số của
-                bạn.
+                To assist in answering all your questions about your digital
+                transformation roadmap.
               </p>
             </div>
           </div>
@@ -96,24 +96,25 @@ export default function Contact() {
             <div className="space-y-12">
               <div className="space-y-6">
                 <div className="inline-flex items-center  px-5 py-2 rounded-full bg-primary text-white font-semibold text-sm">
-                  Sẵn Sàng Hợp Tác?
+                  Ready to Collaborate?
                 </div>
                 <h2
                   data-aos="fade-up"
                   data-aos-duration="800"
                   className="text-3xl sm:text-5xl font-display font-bold text-foreground leading-tight tracking-tight"
                 >
-                  Bắt đầu xây dựng đội ngũ{" "}
-                  <span className="text-primary">vững mạnh</span>
+                  Start building a{" "}
+                  <span className="text-primary"> strong team.</span>
                 </h2>
                 <p
                   data-aos="fade-up"
                   data-aos-duration="1000"
                   className="text-base leading-relaxed text-foreground/70 max-w-lg"
                 >
-                  Đừng để rào cản đào tạo kìm hãm sự phát triển của doanh nghiệp
-                  bạn. Để lại thông tin, đội ngũ chuyên gia của Beon sẽ liên hệ
-                  tư vấn lộ trình E-learning hoàn toàn miễn phí.
+                  Don't let training obstacles hinder your business growth.
+                  Leave your information, and Beon's team of experts will
+                  contact you for a completely free E-learning roadmap
+                  consultation.
                 </p>
               </div>
 
@@ -124,14 +125,14 @@ export default function Contact() {
                       htmlFor="name"
                       className="block text-sm font-medium text-foreground mb-2"
                     >
-                      Họ và Tên
+                      Full Name
                     </label>
                     <input
                       type="text"
                       id="name"
                       name="name"
                       required
-                      placeholder="Nhập tên của bạn"
+                      placeholder="Enter your name"
                       className="w-full rounded-xl text-sm border border-border bg-muted/50 px-4 py-3 text-foreground placeholder:text-foreground/40 focus:border-accent focus:outline-none focus:ring-1 focus:ring-accent transition-all"
                     />
                   </div>
@@ -140,14 +141,14 @@ export default function Contact() {
                       htmlFor="phone"
                       className="block text-sm font-medium text-foreground mb-2"
                     >
-                      Số điện thoại
+                      Phone Number
                     </label>
                     <input
                       type="tel"
                       id="phone"
                       name="phone"
                       required
-                      placeholder="Số điện thoại"
+                      placeholder="Phone number"
                       className="w-full rounded-xl text-sm border border-border bg-muted/50 px-4 py-3 text-foreground placeholder:text-foreground/40 focus:border-accent focus:outline-none focus:ring-1 focus:ring-accent transition-all"
                     />
                   </div>
@@ -158,14 +159,14 @@ export default function Contact() {
                     htmlFor="email"
                     className="block text-sm font-medium text-foreground mb-2"
                   >
-                    Email Khách Hàng
+                    Customer Email
                   </label>
                   <input
                     type="email"
                     id="email"
                     name="email"
                     required
-                    placeholder="Địa chỉ email"
+                    placeholder="Email address"
                     className="w-full rounded-xl text-sm border border-border bg-muted/50 px-4 py-3 text-foreground placeholder:text-foreground/40 focus:border-accent focus:outline-none focus:ring-1 focus:ring-accent transition-all"
                   />
                 </div>
@@ -175,7 +176,7 @@ export default function Contact() {
                     htmlFor="service"
                     className="block text-sm font-medium text-foreground mb-2"
                   >
-                    Bạn quan tâm đến dịch vụ nào?
+                    Which service are you interested in?
                   </label>
                   <select
                     id="service"
@@ -183,11 +184,11 @@ export default function Contact() {
                     required
                     className="w-full rounded-xl text-sm border border-border bg-muted/50 px-4 py-3 text-foreground focus:border-accent focus:outline-none focus:ring-1 focus:ring-accent transition-all appearance-none cursor-pointer"
                   >
-                    <option value="">Chọn dịch vụ quan tâm...</option>
-                    <option value="elearning">Chuyển đổi E-learning</option>
-                    <option value="training">Đào tạo Dịch vụ Khách hàng</option>
-                    <option value="consulting">Tư vấn Doanh nghiệp</option>
-                    <option value="other">Khác</option>
+                    <option value="">Select a service...</option>
+                    <option value="elearning">E-learning Transformation</option>
+                    <option value="training">Customer Service Training</option>
+                    <option value="consulting">Corporate Consulting</option>
+                    <option value="other">Other</option>
                   </select>
                 </div>
 
@@ -196,13 +197,13 @@ export default function Contact() {
                     htmlFor="message"
                     className="block text-sm font-medium text-foreground mb-2"
                   >
-                    Lời nhắn của bạn
+                    Your Message
                   </label>
                   <textarea
                     name="message"
                     id="message"
                     rows={4}
-                    placeholder="Mô tả ngắn gọn nhu cầu của bạn..."
+                    placeholder="Briefly describe your requirements..."
                     className="w-full text-sm rounded-xl border border-border bg-muted/50 px-4 py-3 text-foreground placeholder:text-foreground/40 focus:border-accent focus:outline-none focus:ring-1 focus:ring-accent transition-all resize-none"
                   />
                 </div>
@@ -240,11 +241,11 @@ export default function Contact() {
                           d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"
                         ></path>
                       </svg>
-                      Đang gửi...
+                      Sending...
                     </>
                   ) : (
                     <>
-                      Nhận tư vấn ngay
+                      Get Consultation Now
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         className="h-5 w-5"
@@ -291,17 +292,17 @@ export default function Contact() {
               </svg>
             </div>
             <h3 className="text-2xl font-display font-bold text-foreground mb-4">
-              Cảm ơn bạn đã quan tâm!
+              Thank you for your interest!
             </h3>
             <p className="text-foreground/70 mb-8 leading-relaxed">
-              Thông tin của bạn đã được gửi thành công. Đội ngũ chuyên gia của
-              BEON sẽ liên hệ tư vấn trong thời gian sớm nhất.
+              Your information has been submitted successfully. BEON's team of
+              experts will get in touch with you as soon as possible.
             </p>
             <button
               onClick={() => setShowSuccessModal(false)}
               className="w-full rounded-xl bg-primary px-6 py-4 text-white font-semibold hover:bg-primary/90 transition-all duration-300 shadow-lg shadow-primary/20 hover:-translate-y-1"
             >
-              Đóng
+              Close
             </button>
           </div>
         </div>

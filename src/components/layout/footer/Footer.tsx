@@ -22,15 +22,15 @@ export default function Footer() {
                 </Link>
               </div>
               <p className="text-white/60 text-base leading-relaxed max-w-sm">
-                Giải pháp học tập & đào tạo thông minh cho doanh nghiệp SME Việt
-                Nam
+                Smart learning & training solutions for Vietnamese SME
+                businesses
               </p>
             </div>
 
             {/* Contact Section */}
             <div>
               <h3 className="text-white font-display font-semibold mb-6 text-lg tracking-wide">
-                Liên Hệ
+                Contact
               </h3>
               <ul className="space-y-4">
                 <li className="flex items-center gap-3">
@@ -75,8 +75,7 @@ export default function Footer() {
             <div className="flex flex-col md:flex-row justify-between items-center gap-6">
               {/* Copyright */}
               <p className="text-white/40 text-sm">
-                &copy; {new Date().getFullYear()} Beon. Tất cả quyền được bảo
-                lưu.
+                &copy; {new Date().getFullYear()} Beon. All rights reserved.
               </p>
 
               {/* Social Links */}

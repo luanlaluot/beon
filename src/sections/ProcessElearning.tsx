@@ -60,14 +60,15 @@ export default function ProcessElearning() {
         {/* Header */}
         <div className="text-center mb-16">
           <div className="inline-flex items-center px-5 py-2 rounded-full bg-white/10 text-white font-bold text-sm border border-white/20 backdrop-blur-sm mb-4">
-            Lộ Trình E-Learning
+            E-learning Products
           </div>
           <h2 className="text-3xl sm:text-5xl font-display font-bold tracking-tight mb-4">
-            E-Learning <span className="text-blue-300">Solution</span>
+            Empowering everyone, learning at any pace.
           </h2>
           <p className="text-base text-white/70 max-w-2xl mx-auto leading-relaxed">
-            Quy trình số hoá đào tạo và triển khai E-learning chuyên nghiệp 5
-            bước, từ khảo sát đến vận hành.
+            Empowering your team with precise knowledge, our E-learning solution
+            fosters limitless growth, allowing every individual to define their
+            own path to success..
           </p>
         </div>
 

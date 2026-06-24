@@ -56,14 +56,16 @@ export default function ProcessCorporate() {
         {/* Header */}
         <div className="text-center mb-16">
           <div className="inline-flex items-center px-5 py-2 rounded-full bg-primary text-white font-bold text-sm mb-4">
-            Lộ Trình Đào Tạo
+            E-learning Products
           </div>
           <h2 className="text-3xl sm:text-5xl font-display font-bold text-foreground tracking-tight mb-4">
-            Corporate Training <span className="text-primary">Process</span>
+            <span className="text-primary">Empowering </span>everyone, <br />
+            learning at any <span className="text-primary">pace.</span>
           </h2>
           <p className="text-base text-foreground/60 max-w-2xl mx-auto leading-relaxed">
-            Quy trình đào tạo doanh nghiệp 5 bước chuyên nghiệp, bài bản từ khảo
-            sát nhu cầu đến hỗ trợ sau đào tạo.
+            Empowering your team with precise knowledge, our E-learning solution
+            fosters limitless growth, allowing every individual to define their
+            own path to success..
           </p>
         </div>
 

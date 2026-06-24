@@ -28,28 +28,28 @@ export default function About() {
           <div className="space-y-10">
             <div className="space-y-6">
               <div className="inline-flex items-center px-5 py-2 rounded-full bg-primary text-white font-bold text-sm tracking-wide">
-                Về Chúng Tôi
+                About Us
               </div>
               <h2
                 data-aos="fade-up"
                 data-aos-duration="800"
                 className="text-3xl sm:text-5xl font-display font-black text-[#111827] leading-[1.1] tracking-tight"
               >
-                Giải phóng tiềm năng của{" "}
-                <span className="text-primary">SME Việt Nam</span>
+                Unleashing <span className="text-primary">SME</span> Potential
+                in Vietnam.
               </h2>
               <p
                 data-aos="fade-up"
                 data-aos-duration="1000"
                 className="text-lg leading-relaxed text-foreground/70"
               >
-                Beon Academy sinh ra với mong muốn xóa bỏ khoảng cách về công
-                nghệ và quy trình cho các doanh nghiệp vừa và nhỏ, mang lại
-                những công cụ đào tạo tinh gọn nhất.
+                At Beon Academy, we empower SMEs by simplifying complex
+                processes through lean training. We turn your internal potential
+                into a lasting competitive edge
               </p>
             </div>
 
-            <div className="flex flex-col gap-10 pt-6">
+            <div className="flex flex-col gap-6 pt-4">
               <div
                 data-aos="fade-up"
                 data-aos-duration="1100"
@@ -71,12 +71,13 @@ export default function About() {
                 </div>
                 <div>
                   <h3 className="text-xl sm:text-2xl font-display font-bold text-foreground mb-3">
-                    Tầm nhìn
+                    Vision
                   </h3>
                   <p className="text-base text-foreground/70 leading-relaxed">
-                    Trở thành đơn vị hàng đầu cung cấp giải pháp đào tạo &
-                    E-learning toàn diện cho SME, giúp các tổ chức nâng cao năng
-                    lực nhân sự bằng công nghệ học tập tiên tiến.
+                    To become the leading provider of comprehensive training and
+                    E-learning solutions for SMEs, empowering organizations to
+                    elevate their workforce capabilities through advanced
+                    learning technology.
                   </p>
                 </div>
               </div>
@@ -102,13 +103,13 @@ export default function About() {
                 </div>
                 <div>
                   <h3 className="text-xl sm:text-2xl font-display font-bold text-foreground mb-3">
-                    Sứ mệnh
+                    Mission
                   </h3>
                   <p className="text-base text-foreground/70 leading-relaxed">
-                    BEON Academy giúp doanh nghiệp SME “bật công tắc học tập”
-                    thông qua giải pháp đào tạo linh hoạt, dễ triển khai và tiết
-                    kiệm chi phí – nhưng vẫn giữ chuẩn mực chất lượng, chuyên
-                    nghiệp, và hiệu quả thực tiễn.
+                    BEON Academy empowers SMEs to "activate a culture of
+                    learning" through flexible, easily deployable, and
+                    cost-effective training solutions—maintaining high standards
+                    of quality, professionalism, and practical effectiveness.
                   </p>
                 </div>
               </div>
