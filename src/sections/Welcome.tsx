@@ -1,15 +1,9 @@
 export default function Welcome() {
   return (
     <section
-      className="relative overflow-hidden flex justify-center items-center bg-background md:min-h-screen py-28 lg:py-44"
+      className="relative overflow-hidden flex justify-center items-center md:min-h-screen py-28 lg:py-44"
       id="home"
     >
-      {/* Soft glow accents */}
-      <div className="pointer-events-none absolute inset-0 z-0 overflow-hidden">
-        <div className="absolute -top-[15%] right-[8%] h-[40%] w-[40%] rounded-full bg-accent/10 blur-3xl" />
-        <div className="absolute top-[30%] -left-[5%] h-[35%] w-[35%] rounded-full bg-primary/5 blur-3xl" />
-      </div>
-
       <div className="relative z-10 mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col items-center text-center">
           {/* Headline */}

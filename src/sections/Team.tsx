@@ -87,7 +87,7 @@ export default function Team() {
   const next = () => setActive((a) => (a + 1) % members.length);
 
   return (
-    <section className="py-24 bg-muted relative overflow-hidden" id="team">
+    <section className="py-24 relative overflow-hidden" id="team">
       {/* Decorative blobs */}
       <div className="absolute -top-32 -right-32 w-96 h-96 rounded-full bg-primary/5 blur-3xl pointer-events-none" />
       <div className="absolute -bottom-32 -left-32 w-96 h-96 rounded-full bg-secondary/5 blur-3xl pointer-events-none" />

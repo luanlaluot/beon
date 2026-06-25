@@ -30,7 +30,7 @@ export default function WhoWeHelp() {
   return (
     <section
       id="who-we-help"
-      className="relative overflow-hidden bg-muted py-24 sm:py-32"
+      className="relative overflow-hidden py-24 sm:py-32"
       aria-labelledby="who-we-help-heading"
     >
       <div

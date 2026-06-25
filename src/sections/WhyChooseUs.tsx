@@ -91,7 +91,7 @@ export default function WhyChooseUs() {
   ];
 
   return (
-    <section className="py-24 bg-muted relative" id="why-choose-us">
+    <section className="py-24 relative" id="why-choose-us">
       {/* Background Graphic */}
       <div className="absolute top-0 right-0 w-1/3 h-full bg-primary/5 -skew-x-12 transform origin-top translate-x-20 z-0"></div>
 

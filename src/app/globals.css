@@ -18,8 +18,13 @@
     --color-ring: #007CD8;
   }
 
-  body {
+  html {
     background-color: var(--color-background);
+  }
+
+  body {
+    /* Transparent so the fixed grid backdrop (in Layout) shows through */
+    background-color: transparent;
     color: var(--color-foreground);
     font-family: "Work Sans", ui-sans-serif, system-ui, sans-serif;
   }

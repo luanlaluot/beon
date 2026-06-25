@@ -1,7 +1,7 @@
 export default function Service() {
   return (
     <section
-      className="py-24 bg-muted text-foreground relative overflow-hidden"
+      className="py-24 text-foreground relative overflow-hidden"
       id="philosophy"
     >
       {/* Background Graphic */}
