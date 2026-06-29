@@ -2,7 +2,6 @@
 
 import { type ReactNode, useEffect, useState } from "react";
 import BackToTop from "../elements/BackToTop";
-import PageHead from "./PageHead";
 import Footer1 from "./footer/Footer";
 import Breadcrumb from "./Breadcrumb";
 import Header from "./header/Header";
@@ -59,7 +58,6 @@ export default function Layout({
         <div className="absolute bottom-[5%] -left-[8%] h-[40%] w-[40%] rounded-full bg-primary/[0.06] blur-[120px]" />
       </div>
 
-      <PageHead headTitle={headTitle} />
       <Header
         scroll={scroll}
         isMobileMenu={isMobileMenu}

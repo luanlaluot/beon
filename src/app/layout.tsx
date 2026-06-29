@@ -74,7 +74,7 @@ type RootLayoutProps = {
 
 export default function RootLayout({ children }: RootLayoutProps) {
   return (
-    <html lang="vi" id="#top">
+    <html lang="vi" id="top">
       <head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link

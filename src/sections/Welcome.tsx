@@ -24,10 +24,10 @@ export default function Welcome() {
             data-aos-duration="1000"
             className="mt-7 max-w-xl text-base leading-relaxed text-foreground/60 sm:text-lg"
           >
-            BEON – Powering Learning Transformation. Giải pháp học tập &amp; đào
-            tạo thông minh cho doanh nghiệp SME Việt Nam.{" "}
+            BEON – Powering Learning Transformation. Smart learning &amp; training
+            solutions for Vietnamese SME businesses.{" "}
             <span className="font-semibold text-primary">
-              Chúng tôi đồng hành cùng tăng trưởng của bạn.
+              We partner with you on your growth journey.
             </span>
           </p>
 
@@ -41,13 +41,13 @@ export default function Welcome() {
               href="#contact"
               className="inline-flex items-center justify-center rounded-full bg-primary px-8 py-3.5 text-base font-semibold text-white shadow-lg shadow-primary/30 transition-all duration-300 hover:-translate-y-0.5 hover:bg-primary/90 hover:shadow-primary/40"
             >
-              Tư vấn miễn phí
+              Book a free consultation
             </a>
             <a
               href="#solutions"
               className="group inline-flex items-center gap-2 text-base font-semibold text-foreground transition-colors hover:text-primary"
             >
-              Tìm hiểu giải pháp
+              Explore our solutions
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1"

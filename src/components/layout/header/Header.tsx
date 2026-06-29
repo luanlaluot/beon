@@ -17,23 +17,23 @@ const MENU: MenuGroup[] = [
   {
     label: "BEON Solutions",
     items: [
-      { label: "Corporate Training", target: "process-corporate" },
+      { label: "Corporate Training", target: "pricing" },
       { label: "E-learning Solutions", target: "solutions" },
-      { label: "Learning Media as Service", target: "benefits" },
+      { label: "Learning Media as Service", target: "solutions" },
     ],
   },
   {
     label: "Client Stories",
     items: [
-      { label: "E-learning Products", target: "who-we-help" },
-      { label: "Resources", target: "pricing" },
+      { label: "E-learning Products", target: "process-corporate" },
+      { label: "Resources", target: "#" },
     ],
   },
   {
     label: "About BEON",
     items: [
       { label: "Our Vision, Mission", target: "about" },
-      { label: "Our People & Value", target: "team" },
+      { label: "Our People & Value", target: "why-choose-us" },
       { label: "Our Service philosophy", target: "philosophy" },
     ],
   },
@@ -44,8 +44,7 @@ const HEADER_OFFSET = 96;
 function scrollToSection(target: string) {
   const el = document.getElementById(target);
   if (!el) return;
-  const top =
-    el.getBoundingClientRect().top + window.scrollY - HEADER_OFFSET;
+  const top = el.getBoundingClientRect().top + window.scrollY - HEADER_OFFSET;
   window.scrollTo({ top, behavior: "smooth" });
 }
 
@@ -72,7 +71,7 @@ export default function Header({ scroll, isMobileMenu, handleMobileMenu }) {
               <img
                 src="/assets/img/logo/logo.png"
                 alt="Logo"
-                className="h-12 w-auto"
+                className="h-12 md:h-[72px] w-auto"
               />
             </Link>
           </div>
@@ -129,7 +128,7 @@ export default function Header({ scroll, isMobileMenu, handleMobileMenu }) {
               }}
               className="hidden sm:inline-flex items-center justify-center gap-2 px-6 py-3 bg-primary text-base text-white font-semibold rounded-xl hover:bg-primary/90 transition-all duration-300 shadow-lg shadow-primary/30 hover:shadow-primary/50 hover:-translate-y-1"
             >
-              Đặt lịch ngay
+              Book a call
             </a>
 
             {/* Mobile toggle */}
@@ -150,7 +149,11 @@ export default function Header({ scroll, isMobileMenu, handleMobileMenu }) {
                   strokeLinecap="round"
                   strokeLinejoin="round"
                   strokeWidth={2}
-                  d={isMobileMenu ? "M6 18L18 6M6 6l12 12" : "M4 6h16M4 12h16M4 18h16"}
+                  d={
+                    isMobileMenu
+                      ? "M6 18L18 6M6 6l12 12"
+                      : "M4 6h16M4 12h16M4 18h16"
+                  }
                 />
               </svg>
             </button>
@@ -163,7 +166,10 @@ export default function Header({ scroll, isMobileMenu, handleMobileMenu }) {
         <div className="lg:hidden border-t border-border bg-white max-h-[calc(100vh-5rem)] overflow-y-auto">
           <div className="px-4 py-4 space-y-1">
             {MENU.map((group) => (
-              <div key={group.label} className="border-b border-border/60 last:border-0">
+              <div
+                key={group.label}
+                className="border-b border-border/60 last:border-0"
+              >
                 <button
                   type="button"
                   onClick={() =>
@@ -212,7 +218,7 @@ export default function Header({ scroll, isMobileMenu, handleMobileMenu }) {
               }}
               className="mt-4 inline-flex w-full items-center justify-center gap-2 px-6 py-3 bg-primary text-base text-white font-semibold rounded-xl hover:bg-primary/90 transition-all duration-300"
             >
-              Đặt lịch ngay
+              Book a call
             </a>
           </div>
         </div>

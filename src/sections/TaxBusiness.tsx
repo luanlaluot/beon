@@ -6,7 +6,7 @@ export default function TaxBusiness() {
     >
       {/* Decorative Blocks */}
       <div className="absolute top-0 right-0 w-1/3 h-full bg-secondary/20 -skew-x-12 transform origin-top translate-x-20 z-0"></div>
-      
+
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="mx-auto max-w-3xl text-center mb-16">
           <h2
@@ -14,14 +14,15 @@ export default function TaxBusiness() {
             data-aos-duration="600"
             className="text-3xl sm:text-5xl font-display font-bold tracking-tight mb-6"
           >
-            Giải Pháp Đào Tạo <span className="text-blue-300">Khác Biệt</span>
+            Turning Potential Into{" "}
+            <span className="text-blue-300">Performance</span>.
           </h2>
           <p
             data-aos="fade-up"
             data-aos-duration="800"
             className="text-base text-white/80 leading-relaxed"
           >
-            {`BEON mang đến giải pháp đào tạo toàn diện cho SME, giúp doanh nghiệp triển khai nhanh, chi phí hợp lý nhưng vẫn đạt chuẩn chuyên nghiệp. Các chương trình được thiết kế thực tiễn, học để áp dụng ngay, tích hợp trên hệ thống học tập hiện đại, dễ quản lý tiến độ.`}
+            {`Strategies are replicable and technology is purchasable, but your people and culture are your only truly sustainable competitive advantages`}
           </p>
         </div>
 
@@ -30,26 +31,39 @@ export default function TaxBusiness() {
             {
               title: "Corporate Training",
               subtitle: "Đào tạo doanh nghiệp In-house",
-              desc: "BEON mang đến các chương trình đào tạo chuyên sâu về dịch vụ khách hàng dành cho doanh nghiệp trong lĩnh vực F&B, Bán lẻ và Dịch vụ (Hospitality).",
-              icon: "fa-solid fa-map-location-dot"
+              desc: `<p>
+    <span >At BEON, we go beyond standard training; we partner with businesses to decode complex HR challenges through our specialized programs:</span>
+</p>
+<ul style="list-style-type: disc; padding-left: 20px;">
+    <li>
+        <span class="text-white font-semibold">Excellence Customer Service:</span> Transforming every customer experience into a strategic touchpoint for revenue growth.
+    </li>
+    <li>
+        <span class="text-white font-semibold">Practical Management Skills:</span> Converting leadership mindset into measurable business results.</span>
+    </li>
+    <li>
+        <span class="text-white font-semibold">Effective Communication Artistry:</span> Building lasting engagement and optimizing internal performance.</span>
+    </li>
+</ul>`,
+              icon: "fa-solid fa-map-location-dot",
             },
             {
-              title: "Coaching",
+              title: "Service Mastery Coaching",
               subtitle: "Huấn luyện & Phát triển năng lực",
-              desc: "Giải pháp E-learning for SME được thiết kế theo tiêu chí: nhanh - hiệu quả - chi phí hợp lý, giúp doanh nghiệp chuyển đổi từ đào tạo truyền thống sang mô hình học tập linh hoạt và đo lường được hiệu quả.",
-              icon: "fa-solid fa-laptop-code"
+              desc: "Unlock your team's true potential with BEON's professional coaching and mentoring programs. Designed specifically for leaders and personnel in F&B, retail, and services, our 1-on-1 and group journeys are crafted to sharpen mindsets, leverage personal strengths, and tackle professional hurdles head-on. Empower your business to achieve peak performance and elevate your organization’s capabilities",
+              icon: "fa-solid fa-laptop-code",
             },
             {
-              title: "Learning Media as a Service (LMaaS)",
+              title: "Learning Media As a Service",
               subtitle: "Phòng thiết kế E-learning thuê ngoài",
-              desc: "BEON Academy đóng vai trò như phòng thiết kế nội dung nội bộ thuê ngoài cho doanh nghiệp, bao gồm: viết kịch bản học tập, thiết kế đồ họa, quay dựng video, hoạt hình 2D/3D, Animation và tích hợp lên LMS. Giải pháp này giúp doanh nghiệp tiết kiệm đến 70% chi phí vận hành bộ phận đào tạo nội bộ, mà vẫn đảm bảo chất lượng và tiến độ triển khai.",
-              icon: "fa-solid fa-photo-film"
+              desc: "BEON Academy serves as your outsourced in-house content design department, offering end-to-end solutions including learning scriptwriting, graphic design, video production, 2D/3D animation, and LMS integration. This solution helps businesses reduce training operational costs by up to 70% while ensuring high-quality output and timely deployment",
+              icon: "fa-solid fa-photo-film",
             },
             {
-              title: "E-Learning Solutions",
+              title: "E-Learning Solution",
               subtitle: "Giải pháp học tập trực tuyến cho SME",
-              desc: "Giải pháp E-learning for SME được thiết kế theo tiêu chí: nhanh - hiệu quả - chi phí hợp lý, giúp doanh nghiệp chuyển đổi từ đào tạo truyền thống sang mô hình học tập linh hoạt và đo lường được hiệu quả.",
-              icon: "fa-solid fa-chalkboard-user"
+              desc: `"Streamlined, effective, and economical—'E-learning for SME' is your complete solution for digital training transformation. We help you move beyond legacy models toward a flexible learning ecosystem that ensures quick implementation and provides actionable insights into your team’s professional development`,
+              icon: "fa-solid fa-chalkboard-user",
             },
           ].map((feature, index) => (
             <div
@@ -58,18 +72,23 @@ export default function TaxBusiness() {
               data-aos-duration={800 + index * 100}
               className="cursor-pointer group p-8 rounded-3xl bg-white/10 border border-white/10 hover:bg-white/20 transition-all duration-300 backdrop-blur-sm"
             >
-              <div className="flex items-start gap-5 mb-5">
+              <div className="flex items-center gap-5 mb-5">
                 <div className="w-14 h-14 bg-white/20 rounded-2xl flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform duration-300">
                   <i className={`${feature.icon} text-2xl text-white`} />
                 </div>
                 <div>
-                  <h3 className="text-xl sm:text-2xl font-display font-semibold leading-tight">{feature.title}</h3>
-                  <p className="text-xs font-bold tracking-widest uppercase text-blue-300 mt-1">{feature.subtitle}</p>
+                  <h3 className="text-xl sm:text-2xl font-display font-semibold leading-tight">
+                    {feature.title}
+                  </h3>
+                  {/* <p className="text-xs font-bold tracking-widest uppercase text-blue-300 mt-1">
+                    {feature.subtitle}
+                  </p> */}
                 </div>
               </div>
-              <p className="text-base text-white/80 leading-relaxed">
-                {feature.desc}
-              </p>
+              <div
+                className="text-base text-white/80 leading-relaxed"
+                dangerouslySetInnerHTML={{ __html: feature.desc }}
+              />
             </div>
           ))}
         </div>

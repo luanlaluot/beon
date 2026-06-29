@@ -92,9 +92,6 @@ export default function WhyChooseUs() {
 
   return (
     <section className="py-24 relative" id="why-choose-us">
-      {/* Background Graphic */}
-      <div className="absolute top-0 right-0 w-1/3 h-full bg-primary/5 -skew-x-12 transform origin-top translate-x-20 z-0"></div>
-
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="text-center mx-auto max-w-4xl mb-16">
           <div className="inline-flex items-center gap-2 px-5 py-2 rounded-full bg-primary text-white font-semibold text-sm mb-4">
@@ -123,7 +120,7 @@ export default function WhyChooseUs() {
           {cards.map((card, index) => (
             <div
               key={index}
-              className={`flex flex-col items-center p-8 rounded-[2rem] border border-border  shadow-sm hover:shadow-xl hover:border-primary/30 hover:-translate-y-2 transition-all duration-300 group`}
+              className={`flex bg-white flex-col items-center p-8 rounded-[2rem] border border-border  shadow-sm hover:shadow-xl hover:border-primary/30 hover:-translate-y-2 transition-all duration-300 group`}
               data-aos="fade-up"
               data-aos-duration={card.delay}
             >

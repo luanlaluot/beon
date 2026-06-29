@@ -4,73 +4,73 @@ import { useState } from "react";
 const members = [
   {
     name: "Mrs. Kim Vu",
-    alias: "(Kim Vũ)",
-    role: "Chuyên gia Customer Experience & Learning Transformation",
+    alias: "(Kim Vu)",
+    role: "Customer Experience & Learning Transformation Expert",
     image: "/assets/img/team/user2.png",
     gradient: "from-secondary/70",
     bio: [
-      "Ms. Kim Vu có hơn 18 năm kinh nghiệm trong lĩnh vực Phát triển nhân lực và Trải nghiệm khách hàng, trong đó hơn 10 năm giữ vai trò lãnh đạo tại các tập đoàn như Sacombank, TTC Group, Pizza 4P’s, Hoàn Mỹ, ALDO Việt Nam và Art de Vivre Academy.",
-      "Với hơn 18 năm kinh nghiệm theo đuổi nghệ thuật phục vụ và phát triển con người, Ms. Kim Vu tin rằng “mỗi khoảnh khắc tiếp xúc là một cơ hội để chạm vào cảm xúc khách hàng.”",
-      "Cô nổi bật với khả năng thiết kế hành trình trải nghiệm dịch vụ (Customer Journey) và xây dựng văn hoá lấy khách hàng làm trung tâm (Service Culture), giúp các doanh nghiệp biến dịch vụ thành trải nghiệm, và trải nghiệm thành giá trị.",
-      "Nổi bật với khả năng thiết kế hành trình trải nghiệm dịch vụ (Customer Journey) và xây dựng văn hoá lấy khách hàng làm trung tâm, giúp biến dịch vụ thành trải nghiệm chạm đến cảm xúc.",
+      "Ms. Kim Vu has over 18 years of experience in Human Development and Customer Experience, including more than 10 years in leadership roles at corporations such as Sacombank, TTC Group, Pizza 4P's, Hoan My, ALDO Vietnam, and Art de Vivre Academy.",
+      "With over 18 years dedicated to the art of service and people development, Ms. Kim Vu believes that \"every touchpoint is an opportunity to connect with the customer's emotions.\"",
+      "She is known for designing service experience journeys (Customer Journey) and building customer-centric cultures (Service Culture), helping businesses turn service into experience, and experience into value.",
+      "She excels at designing service experience journeys and building customer-centric cultures, turning service into emotionally resonant experiences.",
     ],
-    cert: "MBA – University of Bolton (UK); Cử nhân Sư phạm Tiếng Anh; Instructional Design Certificate; Points of You Practitioner; Mental Health First Aid Certified...",
+    cert: "MBA – University of Bolton (UK); Bachelor of English Language Education; Instructional Design Certificate; Points of You Practitioner; Mental Health First Aid Certified...",
     facebook: "#",
     linkedin: "#",
   },
   {
     name: "Mr. Viktor H. Ng",
-    alias: "(Quang Nguyễn)",
-    role: "Chuyên gia Đào tạo & E-learning",
+    alias: "(Quang Nguyen)",
+    role: "Training & E-learning Expert",
     image: "/assets/img/team/user1.png",
     gradient: "from-primary/70",
     bio: [
-      "Với hơn 13 năm kinh nghiệm trong lĩnh vực phát triển nhân lực, ông Viktor H. Ng đã trực tiếp tư vấn và triển khai các hệ thống E-learning, LMS, PMS, OKR cho nhiều doanh nghiệp tại Việt Nam.",
-      "Anh là Trưởng nhóm dự án xây dựng ChatBot AI nội bộ Công ty dẫn đầu thị trường Digital Reward tại VN, từng là thành viên Ban Dự án Chuyển đổi số SAP-ERP, phối hợp cùng KPMG trong dự án chuyển đổi số của doanh nghiệp top đầu ngành sữa quy mô hàng nghìn nhân sự, và vận hành hệ thống Performance Management System (PMS) tại Công ty tư vấn nhân sự hàng đầu VN, góp phần chuẩn hóa và số hóa quy trình đào tạo & đánh giá hiệu suất.",
-      "Từng là thành viên Ban Dự án Chuyển đổi số SAP-ERP, hợp tác cùng KPMG. Ông cũng là Trưởng dự án xây dựng ChatBot AI nội bộ cho các tập đoàn quy mô hàng nghìn nhân sự.",
+      "With over 13 years of experience in human development, Mr. Viktor H. Ng has directly consulted on and implemented E-learning, LMS, PMS, and OKR systems for many businesses across Vietnam.",
+      "He led the project team building an internal AI ChatBot for a company that leads Vietnam's Digital Reward market, was a member of the SAP-ERP digital transformation project board, collaborated with KPMG on a digital transformation project for a top dairy company with thousands of employees, and operated the Performance Management System (PMS) at a leading HR consulting firm in Vietnam — helping standardize and digitize training and performance evaluation processes.",
+      "Formerly a member of the SAP-ERP digital transformation project board in partnership with KPMG, he also led the internal AI ChatBot project for corporations with thousands of employees.",
     ],
-    cert: "Certified OKR (C-OKRP™) công nhận bởi ICF & HRCI, Certified Project Management Professional (PMP)® (Google), Train the Trainer (Dale Carnegie), Instructional Design, Competency Modeling, E-learning Design....",
+    cert: "Certified OKR (C-OKRP™) accredited by ICF & HRCI, Certified Project Management Professional (PMP)® (Google), Train the Trainer (Dale Carnegie), Instructional Design, Competency Modeling, E-learning Design....",
     facebook: "#",
     linkedin: "#",
   },
 
   // {
-  //   name: "Mr. Minh Trần",
-  //   alias: "(Minh Trần)",
-  //   role: "Giám đốc Công nghệ & Hệ thống LMS",
+  //   name: "Mr. Minh Tran",
+  //   alias: "(Minh Tran)",
+  //   role: "Director of Technology & LMS Systems",
   //   image: "/assets/img/team/user1.png",
   //   gradient: "from-[#0A4A87]/70",
   //   bio: [
-  //     "Hơn 10 năm kinh nghiệm triển khai các nền tảng công nghệ học tập (LMS/LXP) cho doanh nghiệp từ 200 đến 5,000+ nhân sự. Từng dẫn dắt đội kỹ thuật tại FPT Software và VNG Corporation.",
-  //     "Chuyên gia tích hợp SCORM, xAPI, AI-personalized learning path — giúp doanh nghiệp đo lường chính xác hiệu quả đào tạo và tối ưu ROI trên từng khóa học.",
+  //     "Over 10 years of experience deploying learning technology platforms (LMS/LXP) for businesses ranging from 200 to 5,000+ employees. Previously led technical teams at FPT Software and VNG Corporation.",
+  //     "Expert in SCORM, xAPI, and AI-personalized learning paths — helping businesses accurately measure training effectiveness and optimize ROI on every course.",
   //   ],
   //   cert: "AWS Certified Solutions Architect; Google Cloud Professional; Moodle Certified Integrator; Agile Scrum Master.",
   //   facebook: "#",
   //   linkedin: "#",
   // },
   // {
-  //   name: "Mrs. Lan Phương",
-  //   alias: "(Lan Phương)",
-  //   role: "Trưởng bộ phận Thiết kế Nội dung & Instructional Design",
+  //   name: "Mrs. Lan Phuong",
+  //   alias: "(Lan Phuong)",
+  //   role: "Head of Content Design & Instructional Design",
   //   image: "/assets/img/team/user2.png",
   //   gradient: "from-accent/70",
   //   bio: [
-  //     "Chuyên gia thiết kế nội dung học tập (Instructional Design) với hơn 9 năm kinh nghiệm xây dựng chương trình đào tạo cho các tập đoàn F&B, Bán lẻ và Dịch vụ tài chính.",
-  //     "Đã sản xuất hơn 500+ module E-learning dạng video tương tác, gamification và microlearning — giúp người học tăng tỷ lệ hoàn thành khóa học lên đến 85%.",
+  //     "Instructional Design expert with over 9 years of experience building training programs for F&B, Retail, and Financial Services corporations.",
+  //     "Produced 500+ interactive video E-learning modules with gamification and microlearning — helping learners achieve course completion rates of up to 85%.",
   //   ],
   //   cert: "Certified Instructional Designer (ATD); Adobe Captivate Expert; Articulate Storyline 360; TESOL Certificate.",
   //   facebook: "#",
   //   linkedin: "#",
   // },
   // {
-  //   name: "Mr. Đức Anh",
-  //   alias: "(Đức Anh)",
-  //   role: "Chuyên gia Tư vấn Chiến lược & Phát triển Doanh nghiệp",
+  //   name: "Mr. Duc Anh",
+  //   alias: "(Duc Anh)",
+  //   role: "Strategic Consulting & Business Development Expert",
   //   image: "/assets/img/team/user1.png",
   //   gradient: "from-primary/60",
   //   bio: [
-  //     "Hơn 15 năm trong lĩnh vực tư vấn chiến lược nhân sự và phát triển tổ chức. Đã đồng hành cùng hơn 80 doanh nghiệp SME Việt Nam xây dựng lộ trình số hóa đào tạo bài bản.",
-  //     "Chuyên gia xây dựng hệ thống OKR, KPI liên kết với kết quả đào tạo, giúp nhà lãnh đạo ra quyết định dựa trên dữ liệu năng lực nhân sự thực tế.",
+  //     "Over 15 years in strategic HR consulting and organizational development. Has partnered with 80+ Vietnamese SME businesses to build structured training digitization roadmaps.",
+  //     "Expert in building OKR and KPI systems linked to training outcomes, helping leaders make decisions based on real workforce capability data.",
   //   ],
   //   cert: "Certified Business Coach (ICF); Strategic HR Management (SHRM-SCP); OKR Professional Coach; Design Thinking Facilitator.",
   //   facebook: "#",
@@ -96,10 +96,10 @@ export default function Team() {
         {/* Header */}
         <div className="text-center mb-16">
           <div className="inline-flex items-center px-5 py-2 rounded-full bg-primary text-white font-bold text-sm mb-4">
-            Đội Ngũ Chuyên Gia
+            Expert Team
           </div>
           <h2 className="text-3xl sm:text-5xl font-display font-bold text-foreground tracking-tight">
-            Những con người <span className="text-primary">đứng sau Beon</span>
+            The people <span className="text-primary">behind Beon</span>
           </h2>
         </div>
 
@@ -164,7 +164,7 @@ export default function Team() {
                   </p>
                 ))}
                 <p className="text-sm leading-relaxed text-foreground/60">
-                  <strong>Chứng chỉ / Học vấn:</strong> {member.cert}
+                  <strong>Certifications / Education:</strong> {member.cert}
                 </p>
               </div>
 
@@ -191,7 +191,7 @@ export default function Team() {
                   <button
                     onClick={prev}
                     className="w-12 h-12 rounded-full border-2 border-primary/30 flex items-center justify-center text-primary hover:bg-primary hover:text-white hover:border-primary transition-all duration-300"
-                    aria-label="Trước"
+                    aria-label="Previous"
                   >
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -209,7 +209,7 @@ export default function Team() {
                   <button
                     onClick={next}
                     className="w-12 h-12 rounded-full bg-primary text-white flex items-center justify-center hover:bg-primary/90 hover:shadow-lg hover:shadow-primary/30 transition-all duration-300"
-                    aria-label="Tiếp"
+                    aria-label="Next"
                   >
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -238,7 +238,7 @@ export default function Team() {
                         ? "w-8 bg-primary"
                         : "w-2 bg-border hover:bg-primary/50"
                     }`}
-                    aria-label={`Thành viên ${i + 1}`}
+                    aria-label={`Team member ${i + 1}`}
                   />
                 ))}
               </div>

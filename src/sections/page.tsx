@@ -22,11 +22,12 @@ export default function Page() {
       <WhoWeHelp />
       <Pricing />
       <ProcessCorporate />
-      <TaxBusiness />
       <About />
       <WhyChooseUs />
+      <TaxBusiness />
       <Team />
-
+      {/* <Works /> */}
+      <ProcessCorporate />
       <Service />
       <Contact />
     </Layout>

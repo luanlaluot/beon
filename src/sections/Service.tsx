@@ -30,7 +30,7 @@ export default function Service() {
               data-aos="fade-right"
               data-aos-delay="200"
             >
-              Học đúng trọng tâm
+              Focused Learning
             </div>
 
             <div
@@ -38,7 +38,7 @@ export default function Service() {
               data-aos="fade-right"
               data-aos-delay="400"
             >
-              Phát triển bền vững
+              Transformational Outcomes
             </div>
 
             <div
@@ -46,7 +46,7 @@ export default function Service() {
               data-aos="fade-left"
               data-aos-delay="600"
             >
-              Ứng dụng hiệu quả
+              Data-Driven Insights
             </div>
           </div>
 

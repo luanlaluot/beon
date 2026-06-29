@@ -1,13 +1,13 @@
 const steps = [
   {
     number: "01",
-    title: "Đánh giá nhu cầu & mục tiêu đào tạo",
+    title: "Asset Protection Excellence",
     subtitle: "Needs Assessment",
     icon: "fa-solid fa-magnifying-glass-chart",
     items: [
-      "Phỏng vấn lãnh đạo và bộ phận nhân sự để hiểu mục tiêu kinh doanh, vấn đề hiệu suất, và kỳ vọng đào tạo.",
+      "Asset Protection Excellence: A Comprehensive Curriculum for Vietcombank",
     ],
-    image: "/assets/img/image/work4-1.png",
+    image: "/assets/img/service/image1.png",
   },
   {
     number: "02",
@@ -15,9 +15,9 @@ const steps = [
     subtitle: "Program Design",
     icon: "fa-solid fa-pen-ruler",
     items: [
-      "Xây dựng khung nội dung, thời lượng, phương pháp phù hợp (Workshop / Coaching / Blended).",
+      "The consultative sales journey at VTD is defined by our strategic 5-step blueprint for success",
     ],
-    image: "/assets/img/image/work4-2.png",
+    image: "/assets/img/service/image2.png",
   },
   {
     number: "03",
@@ -25,27 +25,27 @@ const steps = [
     subtitle: "Training Delivery",
     icon: "fa-solid fa-chalkboard-user",
     items: [
-      "Triển khai chương trình đào tạo theo kế hoạch với đội ngũ giảng viên chuyên nghiệp.",
+      "Cultivating Talent: Redefining the Learning Experience at TTC Land",
     ],
-    image: "/assets/img/image/work4-3.png",
+    image: "/assets/img/service/image3.png",
   },
   {
     number: "04",
     title: "Đánh giá kết quả & chuyển giao",
     subtitle: "Evaluation & Application",
     icon: "fa-solid fa-chart-column",
-    items: [
-      "Đánh giá mức độ hài lòng, khả năng áp dụng và kết quả cải thiện hiệu suất sau đào tạo.",
-    ],
-    image: "/assets/img/image/work4-4.png",
+    items: ["A Transformative Onboarding Journey at Hoa Binh Corporation"],
+    image: "/assets/img/service/image4.png",
   },
   {
     number: "05",
     title: "Hỗ trợ sau đào tạo",
     subtitle: "Follow-up & Coaching",
     icon: "fa-solid fa-handshake",
-    items: ["Gửi tài liệu củng cố, mini test hoặc microlearning qua LMS."],
-    image: "/assets/img/image/work4-5.png",
+    items: [
+      "Igniting Talent: An Engaging E-Learning Onboarding Journey for New Hires at VinSchool Vietnam",
+    ],
+    image: "/assets/img/service/image5.png",
   },
 ];
 
@@ -81,11 +81,11 @@ export default function ProcessCorporate() {
                 className="text-center group flex flex-col items-center"
               >
                 <div className="relative mb-10 w-full max-w-[320px]">
-                  <div className="w-full h-48 rounded-[2rem] overflow-hidden border border-border group-hover:border-primary/30 transition-colors duration-500 shadow-sm group-hover:shadow-lg flex flex-col items-center justify-center">
+                  <div className="w-full h-48 rounded-[1rem] overflow-hidden border border-border group-hover:border-primary/30 transition-colors duration-500 shadow-sm group-hover:shadow-lg flex flex-col items-center justify-center">
                     <img
                       src={step.image}
                       alt={step.title}
-                      className="w-full h-full object-cover group-hover:scale-110 grayscale group-hover:grayscale-0 transition-all duration-500"
+                      className="w-full h-full object-cover group-hover:scale-110 group-hover:grayscale-0 transition-all duration-500"
                     />
                   </div>
                   <div className="absolute -bottom-6 left-1/2 -translate-x-1/2 w-14 h-14 rounded-full flex items-center justify-center shadow-lg z-10 bg-primary group-hover:bg-blue-400 transition-colors">
@@ -130,7 +130,7 @@ export default function ProcessCorporate() {
                     <img
                       src={step.image}
                       alt={step.title}
-                      className="w-full h-full object-cover group-hover:scale-110 grayscale group-hover:grayscale-0 transition-all duration-500"
+                      className="w-full h-full object-cover group-hover:scale-110 group-hover:grayscale-0 transition-all duration-500"
                     />
                   </div>
                   <div className="absolute -bottom-6 left-1/2 -translate-x-1/2 w-14 h-14 rounded-full flex items-center justify-center shadow-lg z-10  bg-primary group-hover:bg-blue-400 transition-colors">
